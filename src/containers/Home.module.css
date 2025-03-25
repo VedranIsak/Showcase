@@ -20,10 +20,6 @@
     color: var(--secondary-text-color);
 }
 
-.subContainer:first-of-type:hover, .subContainer:last-of-type:hover {
-    background: var(--secondary-back-color-hover);
-}
-
 .subSubContainer {
     z-index: 9;
     position: absolute;
