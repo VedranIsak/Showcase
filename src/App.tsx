@@ -1,8 +1,8 @@
 import Header from './containers/Header';
 import Top from './containers/Top';
-import linkedInLogo from "./assets/linkedInLogo.webp";
 import Projects from './containers/Projects';
 
+//Lägga till alt och ackreditering till gmail & github bilderna.
 //Använd denna som inspiration istället! Fast med lila färger istället för gröna: https://www.zachjordan.io/
 //Kolla in fontsizes
 //Kolla in fontsizes för media queries (mobilvy, paddvy)
@@ -22,31 +22,6 @@ function App() {
     <Header />
     <Top />
     {/* <Projects /> */}
-    <a 
-      target='_blank'
-      href="https://se.linkedin.com/in/vedran-isak-3a0a49202"
-      style={{
-        position: "absolute",
-        width: "50px",
-        height: "50px",
-        right: "25px",
-        bottom: "25px",
-        display: "inline-block", 
-        animation: "imgSpin 20s linear infinite",
-        zIndex: "11"
-      }}
-    >
-      <img
-        style={{
-          width: "100%",
-          height: "100%",
-          animation: "imgSpin 20s linear infinite"
-        }}
-        src={linkedInLogo}
-        alt="Link to Vedran's LinkedIn page"
-        title="Image by Amit Jain from icon-icons https://icon-icons.com/users/fQ0EuGDhi5xJAtEEISMXx/icon-sets/" 
-       />
-    </a>
     </>
   )
 }

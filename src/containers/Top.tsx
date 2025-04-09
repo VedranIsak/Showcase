@@ -1,4 +1,5 @@
 import styles from './Top.module.css';
+import profileImg from "../assets/profileImg.jpg";
 
 const Top = () => {
     return (
@@ -13,10 +14,11 @@ const Top = () => {
                 /> */}
 
                 <img 
-                    src='../../src/assets/profileImg.jpg'
+                    src={profileImg}
                     alt="Profile image of Vedran Isak"
+                    title="Image of me (Vedran Isak)"
                     height="400px"
-                    width="300px"
+                    width="400px"
                 />
             </div>
         </div>
