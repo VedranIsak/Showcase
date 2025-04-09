@@ -10,14 +10,19 @@ const Header = () => {
     return (
         <header>
             <nav className={styles.navbar}>
-                <h1 className={styles.header}>Vedran Isak</h1>
-                <h2 
+                <ul>
+                    <li><a>Vedran Isak</a></li>
+                    <li><a href="#section1">Github</a></li>
+                    <li><a>LinkedIn</a></li>
+                    <li><a>Contact me</a></li>
+                </ul>
+                {/* <h2 
                     className={styles.menuButton}
                     onClick={() => { toggleMenu(); }}
                 >
                     + Menu
-                </h2>
-                <SideMenu isMenuVisible={isMenuVisible} setIsMenuVisible={setIsMenuVisible} />
+                </h2> */}
+                {/* <SideMenu isMenuVisible={isMenuVisible} setIsMenuVisible={setIsMenuVisible} /> */}
             </nav>
         </header>
     )

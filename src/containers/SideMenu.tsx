@@ -12,7 +12,6 @@ const SideMenu = ({isMenuVisible, setIsMenuVisible}: SideMenuProps) => {
       <div className={`side-menu ${isMenuVisible ? 'show' : ''}`}>
         <ul>
           <li><a href="#section1">Github</a></li>
-          <li><a href="#section2">LinkedIn</a></li>
           <li>vedranisak1998@gmail.com</li>
           <li onClick={() => { setIsMenuVisible(!isMenuVisible) }}>X</li>
         </ul>
