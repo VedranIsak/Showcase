@@ -1,6 +1,7 @@
 .container {
     color: var(--primary-text-color);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -18,4 +19,20 @@
 
 .imgContainer:hover {
     border: 5px solid var(--secondary-back-color)
+}
+
+
+.textContainer {
+    margin-top: 50px;
+    width: 60%;
+    padding: var(--standard-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--page-margin);
+}
+
+.textContainer h1 {
+    text-align: center;
 }

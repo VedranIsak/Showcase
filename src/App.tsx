@@ -1,8 +1,10 @@
 import Header from './containers/Header';
 import Top from './containers/Top';
-import Projects from './containers/Projects';
+import Skills from './containers/Skills';
 
 //Lägga till alt och ackreditering till gmail & github bilderna.
+//https://icon-icons.com/icon/gmail-new-logo/159149
+//https://icon-icons.com/icon/github-logo/229278
 //Använd denna som inspiration istället! Fast med lila färger istället för gröna: https://www.zachjordan.io/
 //Kolla in fontsizes
 //Kolla in fontsizes för media queries (mobilvy, paddvy)
@@ -19,9 +21,9 @@ import Projects from './containers/Projects';
 function App() {
   return (
     <>
-    <Header />
-    <Top />
-    {/* <Projects /> */}
+      <Header />
+      <Top />
+      <Skills />
     </>
   )
 }

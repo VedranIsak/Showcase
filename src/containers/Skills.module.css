@@ -1,0 +1,30 @@
+.container {
+    width: 100%;
+    background-color: var(--tertiary-back-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerContainer {
+    margin-top: var(--page-margin);
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContentContainer {
+    width: inherit;
+    background-color: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentContainer {
+    height: 400px;
+    width: 500px;
+}

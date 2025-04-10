@@ -1,13 +1,11 @@
 :root {
     --primary-back-color: #301934	;
     --secondary-back-color: #800080	; 
-    --tertiary-back-color: #ffffff;
+    --tertiary-back-color: #000000;
     --primary-text-color: #ffffff;
     --secondary-text-color: #301934;
-    --page-margin: 100px;
-    --text-margin: 15px;
+    --page-margin: 75px;
     --standard-padding: 10px;
-    --page-header-side-margin: 30px;
     --standard-border-radius: 10px;
 }
 
@@ -19,20 +17,14 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    background: var(--primary-back-color);
     color: var(--primary-text-color);
+  }
+
+  body {
+    background: var(--primary-back-color);
   }
 
   a {
     cursor: pointer;
     text-decoration: none;
-  }
-
-  @keyframes imgSpin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
   }
