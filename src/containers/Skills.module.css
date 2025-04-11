@@ -9,6 +9,7 @@
 
 .headerContainer {
     margin-top: var(--page-margin);
+    margin-bottom: var(--page-margin);
     width: inherit;
     display: flex;
     justify-content: center;
@@ -20,11 +21,33 @@
     background-color: inherit;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    margin-bottom: var(--page-margin);
 }
 
 .contentContainer {
-    height: 400px;
-    width: 500px;
+    height: auto;
+    width: 320px;
+    border-radius: var(--standard-border-radius);
+    background-color: var(--secondary-back-color);
+    overflow: hidden;
+    transition: margin-top .5s;
+}
+
+.contentContainer:hover {
+    margin-top: -10px;
+}
+
+.img {
+    width: 320px;
+    height: 200px;;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var( --standard-padding);
 }

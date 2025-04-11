@@ -1,6 +1,8 @@
 import Header from './containers/Header';
 import Top from './containers/Top';
 import Skills from './containers/Skills';
+import Projects from './containers/Projects';
+import Footer from './containers/Footer';
 
 //Lägga till alt och ackreditering till gmail & github bilderna.
 //https://icon-icons.com/icon/gmail-new-logo/159149
@@ -24,6 +26,9 @@ function App() {
       <Header />
       <Top />
       <Skills />
+      <Projects projectsHeader = "Some of my past hobby projects" />
+      <Projects projectsHeader = "Some of my past school & work projects" />
+      <Footer />
     </>
   )
 }

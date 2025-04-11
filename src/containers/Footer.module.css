@@ -1,0 +1,17 @@
+.container {
+    background-color: var(--tertiary-back-color);
+}
+
+.headerContainer {
+    padding-top: var(--page-margin);
+    padding-bottom: var(--page-margin);
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerContainer h2, .headerContainer h3 {
+    text-align: center;
+}
