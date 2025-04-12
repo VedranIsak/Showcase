@@ -1,8 +1,10 @@
-import Header from './containers/Header';
-import Top from './containers/Top';
-import Skills from './containers/Skills';
-import Projects from './containers/Projects';
-import Footer from './containers/Footer';
+import Header from './components/Header';
+import Top from './components/Top';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Footer from './components/Footer';
+import GetProjects from './helpers/ProjectHelper';
+import ProjectType from './enums/ProjectType';
 
 //Lägga till alt och ackreditering till gmail & github bilderna.
 //https://icon-icons.com/icon/gmail-new-logo/159149
@@ -26,8 +28,14 @@ function App() {
       <Header />
       <Top />
       <Skills />
-      <Projects projectsHeader = "Some of my past hobby projects" />
-      <Projects projectsHeader = "Some of my past school & work projects" />
+      <Projects 
+        projectsHeader = "Some of my past hobby projects" 
+        projectList={GetProjects(ProjectType.HobbyProject)}
+      />
+      <Projects 
+        projectsHeader = "Some of my past school & work projects" 
+        projectList={GetProjects(ProjectType.CareerProject)}
+      />
       <Footer />
     </>
   )

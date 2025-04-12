@@ -1,8 +1,7 @@
-import Project from "../models/Project";
+import Project from "../models/ProjectModel";
 
 interface ProjectProps {
-    projectsHeader: string;
-    projects: Project[];
+    project: Project;
 }
 
 export default ProjectProps;
