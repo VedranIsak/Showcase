@@ -9,9 +9,7 @@ import Project from './Project';
 const Projects = ({projectsHeader, projectList}: ProjectsProps) => {
     const projects = projectList.map((project: ProjectModel) => (
         <Project project={project} />
-    ))
-
-    console.log(projectList.length);
+    ));
 
     return (
         <div className={styles.container}>

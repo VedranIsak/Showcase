@@ -11,14 +11,14 @@ const Header = () => {
         setIsMenuVisible(!isMenuVisible);
       };
     return (
-        <header>
+        <header className={styles.headerAnimate}>
             <nav className={styles.navbar}>
                 <ul>
                     <li><a className={styles.textAnchor}>Vedran Isak</a></li>
                     <li>
                         <a 
                             target='_blank'
-                            href="https://se.linkedin.com/in/vedran-isak-3a0a49202"
+                            href="https://github.com/VedranIsak"
                             style={{
                                 width: "70px",
                                 height: "70px",
@@ -31,8 +31,8 @@ const Header = () => {
                                     height: "100%",
                                 }}
                                 src={githubLogo}
-                                alt="Link to Vedran's LinkedIn page"
-                                title="Image by Amit Jain from icon-icons https://icon-icons.com/users/fQ0EuGDhi5xJAtEEISMXx/icon-sets/" 
+                                alt="Link to Vedran's Github page"
+                                title="Image by nerdy besky from icon-icons https://icon-icons.com/users/CWANEwLNzn4fGOJ95Eiug/icon-sets/" 
                             />    
                         </a>               
                     </li>                    
@@ -73,8 +73,8 @@ const Header = () => {
                                     height: "100%",
                                 }}
                                 src={gmailLogo}
-                                alt="Link to Vedran's LinkedIn page"
-                                title="Image by Amit Jain from icon-icons https://icon-icons.com/users/fQ0EuGDhi5xJAtEEISMXx/icon-sets/" 
+                                alt="Link to gmail contact form"
+                                title="Image by Amogh Design from icon-icons https://icon-icons.com/users/0aGxNzwwMBBe5UeCBGjLO/icon-sets/" 
                             />    
                         </a>                           
                     </li>

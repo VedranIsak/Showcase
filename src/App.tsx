@@ -6,9 +6,6 @@ import Footer from './components/Footer';
 import GetProjects from './helpers/ProjectHelper';
 import ProjectType from './enums/ProjectType';
 
-//Lägga till alt och ackreditering till gmail & github bilderna.
-//https://icon-icons.com/icon/gmail-new-logo/159149
-//https://icon-icons.com/icon/github-logo/229278
 //Använd denna som inspiration istället! Fast med lila färger istället för gröna: https://www.zachjordan.io/
 //Kolla in fontsizes
 //Kolla in fontsizes för media queries (mobilvy, paddvy)

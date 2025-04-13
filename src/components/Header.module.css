@@ -36,3 +36,18 @@
     margin-right: var(--page-header-side-margin);
     cursor: pointer;
 }
+
+@keyframes slideFadeIn {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .headerAnimate {
+    animation: slideFadeIn .75s ease-out forwards;
+  }
