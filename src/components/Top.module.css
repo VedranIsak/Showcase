@@ -36,3 +36,7 @@
 .textContainer h1 {
     text-align: center;
 }
+
+.textContainer h1 span {
+    color: var(--quaternary-text-color);
+}

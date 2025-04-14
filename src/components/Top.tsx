@@ -27,10 +27,10 @@ const Top = () => {
             </div>
             <div className={styles.textContainer}>
                 <h1>
-                    Hi! I'm Vedran Isak!
+                    Hi! I'm <span>Vedran Isak.</span>
                 </h1>
                 <h2>
-                    Here you can learn about me and my software related endeavours.
+                    With this site you can get to know me and see some of my software related endeavours.
                 </h2>
             </div>
         </div>

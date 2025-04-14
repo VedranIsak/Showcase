@@ -1,7 +1,26 @@
 .container {
-    border: 3px solid white;
+    border: 5px solid black;
     border-radius: var(--standard-border-radius);
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: calc(100%-40px);
+    height: 250px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--quaternary-back-color);
+    transition: margin-top .5s;
+}
+
+.container:hover {
+    margin-top: 10px;
+}
+
+.container {
+    padding: var(--standard-padding);
+}
+
+.container img, .container h3, .container h4 {
+    margin: 5px;
+    color: var(--tertiary-text-color);
 }

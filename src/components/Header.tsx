@@ -14,7 +14,7 @@ const Header = () => {
         <header className={styles.headerAnimate}>
             <nav className={styles.navbar}>
                 <ul>
-                    <li><a className={styles.textAnchor}>Vedran Isak</a></li>
+                    <li><a className={styles.textAnchor}>VI</a></li>
                     <li>
                         <a 
                             target='_blank'
