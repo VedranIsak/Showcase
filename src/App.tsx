@@ -3,10 +3,16 @@ import Top from './components/Top';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
-import GetProjects from './helpers/ProjectHelper';
+import { GetProjects, GetProjectsHeader } from './helpers/ProjectHelper';
 import ProjectType from './enums/ProjectType';
 
-//Använd denna som inspiration istället! Fast med lila färger istället för gröna: https://www.zachjordan.io/
+
+
+//Lägga till ackreditering & alt till Skills & Projects bilderna:
+// https://icon-icons.com/icon/file-csharp/161322
+// https://icon-icons.com/icon/angular-logo/145496
+// https://icon-icons.com/icon/reactjs-logo/206693
+// https://icon-icons.com/icon/prog-aspnet/50818
 //Kolla in fontsizes
 //Kolla in fontsizes för media queries (mobilvy, paddvy)
 //Kolla in hur många färger man kan ha på en sida (färgpalett)
@@ -14,7 +20,6 @@ import ProjectType from './enums/ProjectType';
 //Lightmode och Darkmode
 //Vart man använder h1,h2,h3,p etc etc
 //Om samma width och height uppkommer på mer än ett ställe, sätt de som variabler
-//Behövs stylingen på logon brytas ur? För MQ anpassning?
 //Lägga till emailservice som skickar emails till vedranisak1998@gmail.com via "Contact" (som Zach har t.ex)
 //HOSTA PÅ RIKTIGT OCH INTE VIA GITHUB
 //Mitt namn ska vara domännamnet: a'la vedranisak.io t.ex
@@ -26,11 +31,11 @@ function App() {
       <Top />
       <Skills />
       <Projects 
-        projectsHeader = "Some of my past hobby projects" 
+        projectsHeader = {GetProjectsHeader(ProjectType.HobbyProject)}
         projectList={GetProjects(ProjectType.HobbyProject)}
       />
       <Projects 
-        projectsHeader = "Some of my past school & work projects" 
+        projectsHeader = {GetProjectsHeader(ProjectType.CareerProject)} 
         projectList={GetProjects(ProjectType.CareerProject)}
       />
       <Footer />

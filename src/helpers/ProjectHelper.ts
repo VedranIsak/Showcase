@@ -72,6 +72,17 @@ const GetCareerProjects = (): Project[] => (
     )
 )
 
+const GetProjectsHeader = (projectType: ProjectType): string => {
+    switch(projectType) {
+        case ProjectType.CareerProject:
+            return "Some of my past school & work projects";
+        case ProjectType.HobbyProject:
+            return "Some of my past hobby projects";
+        case ProjectType.Other:
+            return "Some of my past projects";
+    }
+}
+
 const GetProjects = (projectType: ProjectType): Project[] => {
     switch(projectType) {
         case ProjectType.CareerProject:
@@ -83,4 +94,4 @@ const GetProjects = (projectType: ProjectType): Project[] => {
     }
 }
 
-export default GetProjects;
+export { GetProjects, GetProjectsHeader };
