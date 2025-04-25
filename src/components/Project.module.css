@@ -1,5 +1,5 @@
 .container {
-    border: 5px solid black;
+    border: 2px solid var(--primary-text-color);
     border-radius: var(--standard-border-radius);
     width: calc(100%-40px);
     height: 250px;
@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--quaternary-back-color);
+    background-color: var(--secondary-back-color);
     transition: margin-top .5s;
 }
 
@@ -22,5 +22,5 @@
 
 .container img, .container h3, .container h4 {
     margin: 5px;
-    color: var(--tertiary-text-color);
+    color: var(--primary-text-color);
 }

@@ -19,8 +19,8 @@ const Top = () => {
                 <img 
                     onClick={() => { switchProfileImg(); }}
                     src={imgSrc}
-                    alt="Profile image of Vedran Isak"
-                    title="Self taken image of me (Vedran Isak)"
+                    alt="Self taken profile image of Vedran Isak"
+                    title="Self taken profile image of Vedran Isak"
                     height="400px"
                     width="400px"
                 />

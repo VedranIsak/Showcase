@@ -4,6 +4,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: #301934;
+    background: linear-gradient(180deg,rgba(48, 25, 52, 1) 10%, rgba(0, 0, 0, 1) 100%);
 }
 
 .imgContainer {

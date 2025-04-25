@@ -33,10 +33,16 @@ function App() {
       <Projects 
         projectsHeader = {GetProjectsHeader(ProjectType.HobbyProject)}
         projectList={GetProjects(ProjectType.HobbyProject)}
+        backgroundStyle={{
+          background: 'linear-gradient(180deg, rgba(0, 0, 0, 1) 10%, rgba(48, 25, 52, 1) 100%)'
+        }}      
       />
       <Projects 
         projectsHeader = {GetProjectsHeader(ProjectType.CareerProject)} 
         projectList={GetProjects(ProjectType.CareerProject)}
+        backgroundStyle={{
+          background: 'linear-gradient(180deg, rgba(48, 25, 52, 1) 10%, rgba(0, 0, 0, 1) 100%)'
+        }}      
       />
       <Footer />
     </>

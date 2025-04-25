@@ -1,5 +1,7 @@
 import styles from './Skills.module.css';
-import codeImg from '../assets/codeImg.webp';
+import aspImg from '../assets/skills/aspDotNet.png';
+import sqlImg from '../assets/skills/sqlServer.png';
+import reactImg from '../assets/skills/react.png';
 
 const Skills = () => 
     (    
@@ -10,34 +12,44 @@ const Skills = () =>
             <div className={styles.mainContentContainer}>
                 <div className={styles.contentContainer}>
                     <img 
-                        src={codeImg} 
+                        alt="AI Generated image of a computer with ASP.NET Code"
+                        title="AI Generated image of a computer with ASP.NET Code"
+                        src={aspImg} 
                         className={styles.img}
                     />
                     <div className={styles.textContainer}>
                         <h2>ASP.NET MVC</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sint hic voluptatum ducimus, tempore, itaque animi molestiae assumenda maiores nobis ab! Eligendi tenetur quidem nesciunt ex excepturi, voluptatibus in sed.
-                        </p>
+                        <h3>
+                            I spent nearly three years working with ASP.NET MVC and WPF as a fullstack developer.
+                        </h3>
                     </div>
                 </div>
                 <div className={styles.contentContainer}>
                     <img 
-                        src={codeImg} 
+                        alt="AI Generated image of a computer with React Code"
+                        title="AI Generated image of a computer with React Code"                    
+                        src={reactImg} 
                         className={styles.img}
                     />
                     <div className={styles.textContainer}>
                         <h2>React</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto delectus corporis nulla alias unde laudantium, sequi error, corrupti excepturi quisquam, eius pariatur. Quidem expedita enim itaque dolorum dolores recusandae voluptate?</p>
+                        <h3>
+                            I've spent several years making projects in React. I've also worked with React professionally.
+                        </h3>
                     </div>
                 </div>
                 <div className={styles.contentContainer}>
                     <img 
-                        src={codeImg} 
+                        alt="AI Generated image of a computer with SQL Server Code"
+                        title="AI Generated image of a computer with SQL Server Code"                    
+                        src={sqlImg} 
                         className={styles.img}
                     />
                     <div className={styles.textContainer}>
                         <h2>SQL Server</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores aliquam voluptate harum unde sapiente alias consequatur doloremque molestiae. Similique libero numquam esse aspernatur velit iusto sunt ipsa deleniti architecto voluptas.</p>
+                        <h3>
+                            I spent nearly three years working with SQL Server and, partially, EF.
+                        </h3>
                     </div>
                 </div>
             </div>

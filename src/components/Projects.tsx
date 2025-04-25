@@ -6,13 +6,16 @@ import Project from './Project';
 //Måste bryta upp projects-listan i chunks av två.
 //Därefter köra två var i varje contentContainer.
 
-const Projects = ({projectsHeader, projectList}: ProjectsProps) => {
+const Projects = ({projectsHeader, projectList, backgroundStyle}: ProjectsProps) => {
     const projects = projectList.map((project: ProjectModel) => (
         <Project project={project} />
     ));
 
     return (
-        <div className={styles.container}>
+        <div 
+            className={styles.container}
+            style={backgroundStyle}
+        >
             <div className={styles.headerContainer}>
                 <h2 className={styles.header}>{projectsHeader}</h2>
             </div>
