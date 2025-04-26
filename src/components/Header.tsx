@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import styles from './Header.module.css';
 import SideMenu from './SideMenu';
-import linkedInLogo from "../assets/linkedInLogo.webp";
-import githubLogo from "../assets/githubLogo.png";
-import gmailLogo from "../assets/gmailLogo.png";
+import linkedInLogo from "../assets/header/linkedInLogo.webp";
+import githubLogo from "../assets/header/githubLogo.png";
+import gmailLogo from "../assets/header/gmailLogo.png";
 
 const Header = () => {
     const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false);
@@ -14,7 +14,9 @@ const Header = () => {
         <header className={styles.headerAnimate}>
             <nav className={styles.navbar}>
                 <ul>
-                    <li><a className={styles.textAnchor}>VI</a></li>
+                    <li>
+                        <a>VI</a>
+                    </li>
                     <li>
                         <a 
                             target='_blank'

@@ -15,12 +15,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px solid black;
-    transition: .5s border-color;
+    border: var(--border);
+    transition: var(--border-transition);
 }
 
 .imgContainer:hover {
-    border: 5px solid var(--secondary-back-color)
+    border: var(--border-hover);
 }
 
 

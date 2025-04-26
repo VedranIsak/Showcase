@@ -5,6 +5,7 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 import { GetProjects, GetProjectsHeader } from './helpers/ProjectHelper';
 import ProjectType from './enums/ProjectType';
+import Contact from './components/Contact';
 
 
 
@@ -33,17 +34,12 @@ function App() {
       <Projects 
         projectsHeader = {GetProjectsHeader(ProjectType.HobbyProject)}
         projectList={GetProjects(ProjectType.HobbyProject)}
-        backgroundStyle={{
-          background: 'linear-gradient(180deg, rgba(0, 0, 0, 1) 10%, rgba(48, 25, 52, 1) 100%)'
-        }}      
       />
       <Projects 
         projectsHeader = {GetProjectsHeader(ProjectType.CareerProject)} 
         projectList={GetProjects(ProjectType.CareerProject)}
-        backgroundStyle={{
-          background: 'linear-gradient(180deg, rgba(48, 25, 52, 1) 10%, rgba(0, 0, 0, 1) 100%)'
-        }}      
       />
+      <Contact />
       <Footer />
     </>
   )

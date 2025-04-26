@@ -1,23 +1,23 @@
 .container {
-    border: 2px solid var(--primary-text-color);
+    border: var(--border);
     border-radius: var(--standard-border-radius);
     width: calc(100%-40px);
-    height: 250px;
+    height: 300px;
     margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary-back-color);
-    transition: margin-top .5s;
+    background-color: var(--primary-back-color);
+    transition: var(--border-transition);
 }
 
 .container:hover {
-    margin-top: 10px;
+    border: var(--border-hover)
 }
 
 .container {
-    padding: var(--standard-padding);
+    padding: var(--large-padding);
 }
 
 .container img, .container h3, .container h4 {

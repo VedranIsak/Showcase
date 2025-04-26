@@ -20,14 +20,6 @@
     border-radius: var(--standard-border-radius);
 }
 
-.textAnchor {
-    transition: .5s background-color
-}
-
-.textAnchor:hover {
-    background-color: var(--secondary-back-color)
-}
-
 .navbar a img {
     background: none;
 }

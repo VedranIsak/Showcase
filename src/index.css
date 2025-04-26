@@ -10,7 +10,10 @@
     --page-margin: 75px;
     --standard-padding: 10px;
     --large-padding: 20px;
-    --standard-border-radius: 10px;
+    --standard-border-radius: 20px;
+    --border: 8px solid #ffffff;
+    --border-hover: 8px solid #800080;
+    --border-transition: .5s border-color;
 }
 
 * {

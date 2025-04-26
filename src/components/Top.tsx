@@ -1,6 +1,6 @@
 import styles from './Top.module.css';
-import profileImg from "../assets/profileImg.jpg";
-import profileImgSynth from '../assets/profileImgAlt.jpg';
+import profileImg from "../assets/top/profileImg.jpg";
+import profileImgSynth from '../assets/top/profileImgAlt.jpg';
 import { useState } from 'react';
 
 const Top = () => {

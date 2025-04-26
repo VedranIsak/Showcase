@@ -8,7 +8,7 @@ const Contact = () => {
     return (
         <div id="contactContainer" className={styles.container}>
             <div className={styles.header}>
-                <h2>Send me a message</h2>
+                <h2>Feel free to send me a message</h2>
             </div>
             <form className={styles.formContainer}>
                 <label>Your name</label>
@@ -23,7 +23,7 @@ const Contact = () => {
                     type='email' 
                 />
                 <label>Your message</label>
-                <input
+                <textarea
                     name='messageInput'
                     placeholder='John Doe sends a message?' 
                 />

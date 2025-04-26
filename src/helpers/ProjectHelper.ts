@@ -1,9 +1,9 @@
 import ProjectType from "../enums/ProjectType";
 import Project from "../models/ProjectModel"
-import angularLogoSrc from '../assets/angularLogo.png';
-import aspDotNetLogoSrc from '../assets/aspDotNetLogo.png';
-import reactLogoSrc from '../assets/reactLogo.png';
-import cSharpLogoSrc from '../assets/cSharpLogo.png';
+import angularLogoSrc from '../assets/projects/angularLogo.png';
+import aspDotNetLogoSrc from '../assets/projects/aspDotNetLogo.png';
+import reactLogoSrc from '../assets/projects/reactLogo.png';
+import cSharpLogoSrc from '../assets/projects/cSharpLogo.png';
 
 const aspDotNetTitle = "";
 const aspDotNetAlt ="";

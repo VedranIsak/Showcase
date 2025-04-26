@@ -30,14 +30,14 @@
     height: auto;
     width: 360px;
     border-radius: var(--standard-border-radius);
-    box-shadow: 10px 10px 0px #301934;
+    border: var(--border);
+    transition: var(--border-transition);
     background-color: var(--primary-back-color);
     overflow: hidden;
-    transition: margin-top .25s;
 }
 
 .contentContainer:hover {
-    margin-top: -10px;
+    border: var(--border-hover);
 }
 
 .img {
