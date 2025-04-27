@@ -15,6 +15,13 @@
     align-items: center;
 }
 
+.navbar button {
+  cursor: pointer;
+  background: none;
+  outline: none;
+  border: none;
+}
+
 .navbar a {
     padding: var(--standard-padding);
     border-radius: var(--standard-border-radius);
