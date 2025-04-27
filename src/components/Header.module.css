@@ -29,6 +29,16 @@
     cursor: pointer;
 }
 
+.textAnchor {
+  border: var(--small-border);
+  padding: 5px;
+  transition: var(--small-border-transition);
+}
+
+.textAnchor:hover {
+  border: var(--small-border-hover);
+}
+
 @keyframes slideFadeIn {
     0% {
       transform: translateY(-50px);

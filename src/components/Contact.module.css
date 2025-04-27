@@ -44,7 +44,12 @@ label {
     outline: none;
     border: none;
     cursor: pointer;
-    background: var(--secondary-back-color);
-    border-radius: var(--standard-border-radius);
+    background: none;
+    border: var(--small-border);
+    transition: var(--small-border-transition);
     padding: var(--standard-padding);
+}
+
+.formContainer input[type="submit"]:hover {
+    border: var(--small-border-hover);
 }

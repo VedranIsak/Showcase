@@ -14,7 +14,7 @@ const Header = () => {
         <header className={styles.headerAnimate}>
             <nav className={styles.navbar}>
                 <ul>
-                    <li>
+                    <li className={styles.textAnchor}>
                         <a>VI</a>
                     </li>
                     <li>

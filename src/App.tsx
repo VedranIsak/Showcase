@@ -9,21 +9,15 @@ import Contact from './components/Contact';
 
 
 
-//Lägga till ackreditering & alt till Skills & Projects bilderna:
-// https://icon-icons.com/icon/file-csharp/161322
-// https://icon-icons.com/icon/angular-logo/145496
-// https://icon-icons.com/icon/reactjs-logo/206693
-// https://icon-icons.com/icon/prog-aspnet/50818
+
+//Kolla in img title & alt. Eventuellt mer om det behövs.
 //Kolla in fontsizes
 //Kolla in fontsizes för media queries (mobilvy, paddvy)
 //Kolla in hur många färger man kan ha på en sida (färgpalett)
-//Accessibility
-//Lightmode och Darkmode
 //Vart man använder h1,h2,h3,p etc etc
 //Om samma width och height uppkommer på mer än ett ställe, sätt de som variabler
 //Lägga till emailservice som skickar emails till vedranisak1998@gmail.com via "Contact" (som Zach har t.ex)
-//HOSTA PÅ RIKTIGT OCH INTE VIA GITHUB
-//Mitt namn ska vara domännamnet: a'la vedranisak.io t.ex
+//HOSTA PÅ RIKTIGT OCH INTE VIA GITHUB. Mitt namn ska vara domännamnet: a'la vedranisak.io t.ex
 
 function App() {
   return (

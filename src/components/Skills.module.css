@@ -29,7 +29,6 @@
 .contentContainer {
     height: auto;
     width: 360px;
-    border-radius: var(--standard-border-radius);
     border: var(--border);
     transition: var(--border-transition);
     background-color: var(--primary-back-color);

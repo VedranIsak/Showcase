@@ -1,27 +1,24 @@
 import ProjectType from "../enums/ProjectType";
 import Project from "../models/ProjectModel"
 import angularLogoSrc from '../assets/projects/angularLogo.png';
-import aspDotNetLogoSrc from '../assets/projects/aspDotNetLogo.png';
 import reactLogoSrc from '../assets/projects/reactLogo.png';
 import cSharpLogoSrc from '../assets/projects/cSharpLogo.png';
 
-const aspDotNetTitle = "";
-const aspDotNetAlt ="";
-const reactTitle = "";
-const reactAlt = "";
-const angularTitle = "";
-const angularAlt = "";
-const cSharpTitle = "";
-const cSharpAlt = "";
+const reactTitle = "AI generated image of the React symbol";
+const reactAlt = "AI generated image of the React symbol";
+const angularTitle = "AI generated image of the Angular symbol";
+const angularAlt = "AI generated image of the Angular symbol";
+const cSharpTitle = "AI generated image of the C# symbol";
+const cSharpAlt = "AI generated image of the C# symbol";
 
 const GetSchoolProjects = (): Project[] => (
     new Array<Project>(
         new Project(
             "Yugoslav wars doc site (not deployed)", 
             "Created a (almost fully functioning) website documenting the Yugoslav Wars.", 
-            aspDotNetLogoSrc, 
-            aspDotNetAlt, 
-            aspDotNetTitle),
+            cSharpLogoSrc, 
+            cSharpAlt, 
+            cSharpTitle),
         new Project(
             "Ukraine war doc site (deployed)", 
             "Created and published a small website documenting the Russo-Ukrainian conflict.", 
@@ -37,9 +34,9 @@ const GetSchoolProjects = (): Project[] => (
         new Project(
             "SAAS start up (not deployed)", 
             "Created a (almost fully functioning) website subscription service for the betting market.", 
-            aspDotNetLogoSrc, 
-            aspDotNetAlt, 
-            aspDotNetTitle),
+            cSharpLogoSrc, 
+            cSharpAlt, 
+            cSharpTitle),
     )
 )
 
@@ -48,9 +45,9 @@ const GetCareerProjects = (): Project[] => (
         new Project(
             "Report Service maintenance and optimization", 
             "Used the ITextSharp nuget and SQL Server to maintain and optimize a PDF Document Service at SundaHus", 
-            aspDotNetLogoSrc, 
-            aspDotNetAlt, 
-            aspDotNetTitle),
+            cSharpLogoSrc, 
+            cSharpAlt, 
+            cSharpTitle),
         new Project(
             "Angular Material Prototype", 
             "Developed, after extensive prep work doing interviews and Figma prototyping, a Angular Material showcase prototype for Region Östergötland", 
