@@ -1,0 +1,37 @@
+@media (max-width: 1200px) {
+    div[data-id="skills-content-container"] {
+        width: 240px;
+    }
+
+    div[data-id="skills-content-container"] img {
+        width: 224px;
+        height: 149px;
+    }
+}
+
+@media (max-width: 750px) {
+    div[data-id="skills-main-content-container"] {
+        flex-direction: column;
+    }
+
+    div[data-id="skills-content-container"] {
+        margin: 5px;
+        width: 360px;
+    }
+
+    div[data-id="skills-content-container"] img {
+        width: 344px;
+        height: 230px;
+    }
+}
+
+@media (max-width: 400px) {
+    div[data-id="skills-content-container"] {
+        width: 240px;
+    }
+
+    div[data-id="skills-content-container"] img {
+        width: 224px;
+        height: 149px;
+    }
+}

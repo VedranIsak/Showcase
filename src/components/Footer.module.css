@@ -13,5 +13,7 @@
 }
 
 .headerContainer h2, .headerContainer h3 {
+    padding-left: var(--large-padding);
+    padding-right: var(--large-padding);
     text-align: center;
 }

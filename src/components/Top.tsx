@@ -2,6 +2,7 @@ import styles from './Top.module.css';
 import profileImg from "../assets/top/profileImg.jpg";
 import profileImgSynth from '../assets/top/profileImgAlt.jpg';
 import { useState } from 'react';
+import './Top.css';
 
 const Top = () => {
     const [imgSrc, setImgSrc] = useState<string>(profileImg);
@@ -17,12 +18,11 @@ const Top = () => {
         <div className={styles.container}>
             <div className={styles.imgContainer}>
                 <img 
+                    data-id="top-img"
                     onClick={() => { switchProfileImg(); }}
                     src={imgSrc}
                     alt="Self taken profile image of Vedran Isak"
                     title="Self taken profile image of Vedran Isak"
-                    height="400px"
-                    width="400px"
                 />
             </div>
             <div className={styles.textContainer}>

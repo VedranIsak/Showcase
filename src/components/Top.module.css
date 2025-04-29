@@ -23,16 +23,20 @@
     border: var(--border-hover);
 }
 
+.imgContainer img {
+    width: 400px;
+    height: 400px;
+}
 
 .textContainer {
     margin-top: 50px;
-    width: 60%;
     padding: var(--standard-padding);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: var(--page-margin);
+    padding: var(--large-padding);
 }
 
 .textContainer h1 {

@@ -2,15 +2,16 @@ import styles from './Skills.module.css';
 import aspImg from '../assets/skills/aspDotNet.png';
 import sqlImg from '../assets/skills/sqlServer.png';
 import reactImg from '../assets/skills/react.png';
+import './Skills.css';
 
 const Skills = () => 
     (    
-        <div className={styles.container}>
+        <div className={styles.container} data-id="skills-container">
             <div className={styles.headerContainer}>
                 <h2>My most prominent areas of knowledge</h2>
             </div>
-            <div className={styles.mainContentContainer}>
-                <div className={styles.contentContainer}>
+            <div data-id="skills-main-content-container" className={styles.mainContentContainer}>
+                <div data-id="skills-content-container" className={styles.contentContainer}>
                     <img 
                         alt="AI Generated image of a computer with ASP.NET Code"
                         title="AI Generated image of a computer with ASP.NET Code"
@@ -24,7 +25,7 @@ const Skills = () =>
                         </h3>
                     </div>
                 </div>
-                <div className={styles.contentContainer}>
+                <div data-id="skills-content-container" className={styles.contentContainer}>
                     <img 
                         alt="AI Generated image of a computer with React Code"
                         title="AI Generated image of a computer with React Code"                    
@@ -38,7 +39,7 @@ const Skills = () =>
                         </h3>
                     </div>
                 </div>
-                <div className={styles.contentContainer}>
+                <div data-id="skills-content-container" className={styles.contentContainer}>
                     <img 
                         alt="AI Generated image of a computer with SQL Server Code"
                         title="AI Generated image of a computer with SQL Server Code"                    

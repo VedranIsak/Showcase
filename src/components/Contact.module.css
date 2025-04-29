@@ -16,6 +16,11 @@
     justify-content: center;
 }
 
+.header h2 {
+    padding: var(--large-padding);
+    text-align: center;
+}
+
 .formContainer {
     height: auto;
     width: inherit;

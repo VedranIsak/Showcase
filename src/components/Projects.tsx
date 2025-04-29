@@ -2,9 +2,7 @@ import styles from './Projects.module.css';
 import ProjectsProps from '../props/ProjectsProps';
 import ProjectModel from '../models/ProjectModel';
 import Project from './Project';
-
-//Måste bryta upp projects-listan i chunks av två.
-//Därefter köra två var i varje contentContainer.
+import './Projects.css';
 
 const Projects = ({projectsHeader, projectList}: ProjectsProps) => {
     const projects = projectList.map((project: ProjectModel) => (
@@ -12,18 +10,11 @@ const Projects = ({projectsHeader, projectList}: ProjectsProps) => {
     ));
 
     return (
-        <div 
-            className={styles.container}
-        >
+        <div className={styles.container}>
             <div className={styles.headerContainer}>
-                <h2 className={styles.header}>{projectsHeader}</h2>
+                <h2>{projectsHeader}</h2>
             </div>
-            <div 
-                className={styles.mainContentContainer}
-                style={{
-                    gridTemplateRows: `repeat(${projectList.length/2}, 1fr)`
-                }}
-            >
+            <div data-id="projects-main-content-container" className={styles.mainContentContainer}>
                 {projects}
             </div>
         </div>

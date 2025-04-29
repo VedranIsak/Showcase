@@ -16,6 +16,11 @@
     align-items: center;
 }
 
+.headerContainer h2 {
+    text-align: center;
+    padding: var(--large-padding);
+}
+
 .mainContentContainer {
     width: inherit;
     background-color: inherit;
@@ -27,12 +32,10 @@
 }
 
 .contentContainer {
-    height: auto;
     width: 360px;
     border: var(--border);
     transition: var(--border-transition);
     background-color: var(--primary-back-color);
-    overflow: hidden;
 }
 
 .contentContainer:hover {
@@ -40,8 +43,8 @@
 }
 
 .img {
-    width: 360px;
-    height: 240px;
+    width: 344px;
+    height: 230px;
 }
 
 .textContainer {

@@ -16,8 +16,9 @@
     align-items: center;
 }
 
-.header {
-    margin-left: var(--page-header-side-margin);
+.headerContainer h2 {
+    text-align: center;
+    padding: var(--large-padding);
 }
 
 .mainContentContainer {
