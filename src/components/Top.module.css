@@ -39,7 +39,7 @@
     padding: var(--large-padding);
 }
 
-.textContainer h1 {
+.textContainer h1, .textContainer h2 {
     text-align: center;
 }
 

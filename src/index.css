@@ -7,7 +7,7 @@
     --secondary-text-color: #301934;
     --tertiary-text-color: #000000;
     --quaternary-text-color: #800080;
-    --page-margin: 75px;
+    --page-margin: 50px;
     --standard-padding: 10px;
     --large-padding: 20px;
     --small-border: 5px solid white;
@@ -36,4 +36,10 @@
   a {
     cursor: pointer;
     text-decoration: none;
+  }
+
+  @media (max-width: 900px) {
+    :root {
+      --page-margin: 25px;
+    }
   }
