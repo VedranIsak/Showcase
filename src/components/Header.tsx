@@ -11,49 +11,48 @@ const Header = () => {
         setIsMenuVisible(!isMenuVisible);
       };
 
-    const smoothScrollTo = useCallback((targetId: string, duration: number) => {
-        const target = document.getElementById(targetId);
-        if (!target) return;
-    
-        const start = window.scrollY;
-        const end = target.getBoundingClientRect().top + start;
-        const distance = end - start;
-        const startTime = performance.now();
-    
-        const animateScroll = (currentTime: number) => {
-            const elapsed = currentTime - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-    
-            window.scrollTo(0, start + distance * easeInOutQuad(progress));
-    
-            if (progress < 1) {
-                requestAnimationFrame(animateScroll);
-            }
-        };
-    
-        const easeInOutQuad = (t: number) => {
-            return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-        };
-    
-        requestAnimationFrame(animateScroll);
-    }, []);
-    
-      const scrollToContact = () => {
-        smoothScrollTo("contactContainer", 1000); // scroll over 1000ms
-      };
-        
+const smoothScrollTo = useCallback((targetId: string) => {
+    const start = window.scrollY;
+    const end = targetId === "top"
+        ? 0
+        : (() => {
+            const target = document.getElementById(targetId);
+            if (!target) return start; // fallback to current scroll
+            return target.getBoundingClientRect().top + start;
+        })();
+
+    const distance = end - start;
+    const startTime = performance.now();
+    const duration = 1000;
+
+    const easeInOutQuad = (t: number) => {
+        return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+    };
+
+    const animateScroll = (currentTime: number) => {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+
+        window.scrollTo(0, start + distance * easeInOutQuad(progress));
+
+        if (progress < 1) {
+            requestAnimationFrame(animateScroll);
+        }
+    };
+
+    requestAnimationFrame(animateScroll);
+}, []);
+
+
     return (
         <header className={styles.header}>
             <nav className={styles.navbar}>
                 <ul>
                     <li className={styles.textAnchor}>
-                        <a>VI</a>
+                        <a onClick={() => { smoothScrollTo("top") }}>VI</a>
                     </li>
                     <li>
-                        <a 
-                            target='_blank'
-                            href="https://github.com/VedranIsak"
-                        >
+                        <a target='_blank' href="https://github.com/VedranIsak">
                             <img
                                 src={githubLogo}
                                 alt="Link to Vedran's Github page"
@@ -62,10 +61,7 @@ const Header = () => {
                         </a>               
                     </li>                    
                     <li>
-                        <a 
-                            target='_blank'
-                            href="https://se.linkedin.com/in/vedran-isak-3a0a49202"
-                        >
+                        <a target='_blank' href="https://se.linkedin.com/in/vedran-isak-3a0a49202">
                             <img
                                 src={linkedInLogo}
                                 alt="Link to Vedran's LinkedIn page"
@@ -74,9 +70,7 @@ const Header = () => {
                         </a>               
                     </li>
                     <li>
-                        <a
-                            onClick={scrollToContact}
-                        >
+                        <a onClick={() => { smoothScrollTo("contactContainer") }}>
                             <img
                                 src={emailLogo}
                                 alt="Link to email contact form"

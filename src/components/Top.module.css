@@ -15,12 +15,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: var(--border);
-    transition: var(--border-transition);
+    border: 15px solid white;
+    transition: border-color .5s;
 }
 
 .imgContainer:hover {
-    border: var(--border-hover);
+    border-color: #800080;
 }
 
 .imgContainer img {

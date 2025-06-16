@@ -33,13 +33,15 @@
 
 .contentContainer {
     width: 360px;
-    border: var(--border);
-    transition: var(--border-transition);
+    border: 15px solid white;
+    border-radius: 50px;
+    transition: border-color .5s;
     background-color: var(--primary-back-color);
+    overflow: hidden;
 }
 
 .contentContainer:hover {
-    border: var(--border-hover);
+    border-color: #800080;
 }
 
 .img {

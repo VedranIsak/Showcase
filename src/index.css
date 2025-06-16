@@ -10,13 +10,7 @@
     --page-margin: 50px;
     --standard-padding: 10px;
     --large-padding: 20px;
-    --small-border: 5px solid white;
-    --small-border-transition: .5s border;
-    --small-border-hover: 5px solid #800080;
-    --border: 8px solid #ffffff;
-    --border-hover: 8px solid #800080;
-    --border-transition: .5s border;
-}
+  }
 
 * {
     box-sizing: border-box;
