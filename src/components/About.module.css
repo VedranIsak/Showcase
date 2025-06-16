@@ -1,0 +1,50 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.container {
+    background: white;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    margin: 20px;
+    transition: .5s border-color;
+}
+
+.container:hover {
+    border-color: #800080;
+}
+
+.container h2, .container h3 {
+    text-align: center;
+    margin: 20px;
+}
+
+.container h2 {
+    color: #301934;
+}
+
+.container h3 {
+    color: white;
+}
+
+.headerContainer, .textContainer {
+    display: flex;
+    justify-content: center;
+    width: 700px;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+}
+
+.textContainer {
+    background: #301934;
+}

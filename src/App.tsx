@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import { GetProjects, GetProjectsHeader } from './helpers/ProjectHelper';
 import ProjectType from './enums/ProjectType';
 import Contact from './components/Contact';
+import About from './components/About';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         projectsHeader = {GetProjectsHeader(ProjectType.CareerProject)} 
         projectList={GetProjects(ProjectType.CareerProject)}
       />
+      <About />
       <Contact />
       <Footer />
     </>
