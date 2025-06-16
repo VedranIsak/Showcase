@@ -3,7 +3,7 @@ import styles from './Header.module.css';
 import SideMenu from './SideMenu';
 import linkedInLogo from "../assets/header/linkedInLogo.webp";
 import githubLogo from "../assets/header/githubLogo.png";
-import gmailLogo from "../assets/header/gmailLogo.png";
+import emailLogo from "../assets/header/emailLogo.png";
 
 const Header = () => {
     const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false);
@@ -43,7 +43,7 @@ const Header = () => {
       };
         
     return (
-        <header className={styles.headerAnimate}>
+        <header className={styles.header}>
             <nav className={styles.navbar}>
                 <ul>
                     <li className={styles.textAnchor}>
@@ -53,17 +53,8 @@ const Header = () => {
                         <a 
                             target='_blank'
                             href="https://github.com/VedranIsak"
-                            style={{
-                                width: "70px",
-                                height: "70px",
-                                display: "flex", 
-                            }}
                         >
                             <img
-                                style={{
-                                    width: "100%",
-                                    height: "100%",
-                                }}
                                 src={githubLogo}
                                 alt="Link to Vedran's Github page"
                                 title="Image by nerdy besky from icon-icons https://icon-icons.com/users/CWANEwLNzn4fGOJ95Eiug/icon-sets/" 
@@ -74,17 +65,8 @@ const Header = () => {
                         <a 
                             target='_blank'
                             href="https://se.linkedin.com/in/vedran-isak-3a0a49202"
-                            style={{
-                                width: "70px",
-                                height: "70px",
-                                display: "flex", 
-                            }}
                         >
                             <img
-                                style={{
-                                    width: "100%",
-                                    height: "100%",
-                                }}
                                 src={linkedInLogo}
                                 alt="Link to Vedran's LinkedIn page"
                                 title="Image by Amit Jain from icon-icons https://icon-icons.com/users/fQ0EuGDhi5xJAtEEISMXx/icon-sets/" 
@@ -92,24 +74,15 @@ const Header = () => {
                         </a>               
                     </li>
                     <li>
-                        <button
-                            style={{
-                                width: "70px",
-                                height: "70px",
-                                display: "flex", 
-                            }}
+                        <a
                             onClick={scrollToContact}
                         >
                             <img
-                                style={{
-                                    width: "100%",
-                                    height: "100%",
-                                }}
-                                src={gmailLogo}
-                                alt="Link to gmail contact form"
-                                title="Image by Amogh Design from icon-icons https://icon-icons.com/users/0aGxNzwwMBBe5UeCBGjLO/icon-sets/" 
+                                src={emailLogo}
+                                alt="Link to email contact form"
+                                title="Image by shunesburg69 from openclipart https://openclipart.org/detail/295555/red-mail-icon" 
                             />    
-                        </button>                           
+                        </a>                           
                     </li>
                 </ul>
                 {/* <h2 

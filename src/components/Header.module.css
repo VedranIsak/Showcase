@@ -1,34 +1,51 @@
+.header {
+  animation: slideFadeIn .75s ease-out forwards;
+  position: sticky;
+  top: 0;
+}
+
 .navbar {
     width: 100%;
-    height: 200px;
+    height: 150px;
     font-size: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .navbar ul {
-    width: 80%;
-    height: 100%;
+    background-color: var(--quaternary-back-color);
+    border-radius: 50px;
+    padding: var(--standard-padding);
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.navbar button {
-  cursor: pointer;
-  background: none;
-  outline: none;
-  border: none;
+li {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
 }
 
-.navbar a {
-    padding: var(--standard-padding);
-    border-radius: var(--standard-border-radius);
+img {
+  width: 50px;
+  height: 50px;
 }
 
-.navbar a img {
-    background: none;
+a {
+  height: 50px;
+  width: 50px;
+}
+
+.textAnchor a {
+  height: auto;
+  width: auto;
 }
 
 .menuButton {
@@ -37,9 +54,12 @@
 }
 
 .textAnchor {
-  border: var(--small-border);
-  padding: 5px;
+  background-color: var(--secondary-back-color);
+  border-radius: 100px;
   transition: var(--small-border-transition);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .textAnchor:hover {
@@ -57,6 +77,3 @@
     }
   }
   
-  .headerAnimate {
-    animation: slideFadeIn .75s ease-out forwards;
-  }
