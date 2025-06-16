@@ -24,8 +24,8 @@
 }
 
 .imgContainer img {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
 }
 
 .textContainer {
@@ -37,12 +37,23 @@
     align-items: center;
     margin-bottom: var(--page-margin);
     padding: var(--large-padding);
+    width: 600px;
+    background: white;
+    border-radius: 50px;
 }
 
 .textContainer h1, .textContainer h2 {
     text-align: center;
 }
 
+.textContainer h1 {
+    padding: 15px;
+}
+
 .textContainer h1 span {
-    color: var(--quaternary-text-color);
+    color: black;
+}
+
+.textContainer h2 {
+    color: black;
 }
