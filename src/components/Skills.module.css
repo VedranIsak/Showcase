@@ -1,6 +1,5 @@
 .container {
     width: 100%;
-    background-color: var(--tertiary-back-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,10 +9,12 @@
 .headerContainer {
     margin-top: var(--page-margin);
     margin-bottom: var(--page-margin);
-    width: inherit;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: white;
+    border-radius: 50px;
 }
 
 .headerContainer h2 {

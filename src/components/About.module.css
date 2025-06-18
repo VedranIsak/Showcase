@@ -3,7 +3,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: black;
+}
+
+.pageHeader {
+    margin-top: var(--page-margin);
+    margin-bottom: 50px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 50px;
+}
+
+.pageHeader h2 {
+    text-align: center;
+    padding: var(--large-padding);
 }
 
 .container {
@@ -21,7 +36,7 @@
 }
 
 .container h2 {
-    color: #301934;
+    color: black;
 }
 
 .container h3 {

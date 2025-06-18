@@ -4,16 +4,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: var(--tertiary-back-color);
 }
 
 .headerContainer {
     margin-top: var(--page-margin);
     margin-bottom: 50px;
-    width: inherit;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: white;
+    border-radius: 50px;
 }
 
 .headerContainer h2 {

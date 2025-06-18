@@ -1,6 +1,6 @@
 :root {
-    --primary-back-color: #301934	;
-    --secondary-back-color: #800080	; 
+    --primary-back-color: #301934;
+    --secondary-back-color: #800080; 
     --tertiary-back-color: #000000;
     --quaternary-back-color: #ffffff;
     --primary-text-color: #ffffff;
@@ -23,14 +23,54 @@
   }
 
   html, body {
-    background: var(--primary-back-color);
     max-width: 100vw;
+  }
+
+  body {
+      background: #301934;
+      background: linear-gradient(135deg, #301934 20%, rgba(0, 0, 0, 1) 100%);
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
   }
 
   a {
     cursor: pointer;
     text-decoration: none;
   }
+
+.titleWord {
+  animation: color-animation 10s linear infinite;
+}
+
+.titleWord1 {
+  --color-1: #800080;
+  --color-2: #a27ba9;
+  --color-3: black;
+}
+
+.titleWord2 {
+  --color-1: black;
+  --color-2: #a27ba9;
+  --color-3: #800080;
+}
+
+.titleWord3 {
+  --color-1: #a27ba9;
+  --color-2: #800080;
+  --color-3: black;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
 
   @media (max-width: 900px) {
     :root {

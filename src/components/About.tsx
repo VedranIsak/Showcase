@@ -3,6 +3,13 @@ import styles from './About.module.css';
 const About = () => {
     return (
         <div className={styles.mainContainer}>
+            <div className={styles.pageHeader}>
+                <h2>
+                    <span className='titleWord titleWord1'>Some </span>
+                    <span className='titleWord titleWord2'>personal </span>
+                    <span className='titleWord titleWord3'>facts</span>
+                </h2>
+            </div>
             <div className={styles.container}>
                 <div className={styles.headerContainer}>
                     <h2>My overall life</h2>

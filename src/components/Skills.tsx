@@ -8,13 +8,17 @@ const Skills = () =>
     (    
         <div className={styles.container} data-id="skills-container">
             <div className={styles.headerContainer}>
-                <h2>My most prominent areas of knowledge</h2>
+                <h2>
+                    <span className='titleWord titleWord1'>Some of </span>
+                    <span className='titleWord titleWord2'>my areas of </span>
+                    <span className='titleWord titleWord3'>knowledge</span>7
+                </h2>
             </div>
             <div data-id="skills-main-content-container" className={styles.mainContentContainer}>
                 <div data-id="skills-content-container" className={styles.contentContainer}>
                     <img 
-                        alt="AI Generated image of a computer with ASP.NET Code"
-                        title="AI Generated image of a computer with ASP.NET Code"
+                        alt="AI generated image of a computer with ASP.NET Code"
+                        title="AI generated image of a computer with ASP.NET Code"
                         src={aspImg} 
                         className={styles.img}
                     />
@@ -27,8 +31,8 @@ const Skills = () =>
                 </div>
                 <div data-id="skills-content-container" className={styles.contentContainer}>
                     <img 
-                        alt="AI Generated image of a computer with React Code"
-                        title="AI Generated image of a computer with React Code"                    
+                        alt="AI generated image of a computer with React Code"
+                        title="AI generated image of a computer with React Code"                    
                         src={reactImg} 
                         className={styles.img}
                     />
@@ -41,8 +45,8 @@ const Skills = () =>
                 </div>
                 <div data-id="skills-content-container" className={styles.contentContainer}>
                     <img 
-                        alt="AI Generated image of a computer with SQL Server Code"
-                        title="AI Generated image of a computer with SQL Server Code"                    
+                        alt="AI generated image of a computer with SQL Server Code"
+                        title="AI generated image of a computer with SQL Server Code"                    
                         src={sqlImg} 
                         className={styles.img}
                     />

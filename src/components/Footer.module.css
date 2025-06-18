@@ -1,5 +1,5 @@
 .container {
-    background-color: var(--primary-back-color);
+    background: white;
 }
 
 .headerContainer {
@@ -16,4 +16,5 @@
     padding-left: var(--large-padding);
     padding-right: var(--large-padding);
     text-align: center;
+    color: black;
 }

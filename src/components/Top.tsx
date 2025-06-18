@@ -6,7 +6,7 @@ import './Top.css';
 
 const Top = () => {
     const [imgSrc, setImgSrc] = useState<string>(profileImg);
-    const switchProfileImg= () => {
+    const switchProfileImg = (): void => {
         (imgSrc == profileImg) 
         ?
         setImgSrc(profileImgSynth)
@@ -29,10 +29,8 @@ const Top = () => {
                 <h1>
                     <span className='titleWord titleWord1'>Hi</span>
                     <span>! </span> 
-                    <span className='titleWord titleWord2'>I'm</span> 
-                    <span> </span>
+                    <span className='titleWord titleWord2'>I'm </span> 
                     <span className='titleWord titleWord3'>Vedran Isak</span>
-                    <span>.</span>
                 </h1>
                 <h2>
                     With this site you can get to know me and see some of my software related endeavours.

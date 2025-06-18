@@ -1,58 +1,76 @@
 import { useCallback, useState } from 'react';
 import styles from './Header.module.css';
-import SideMenu from './SideMenu';
 import linkedInLogo from "../assets/header/linkedInLogo.webp";
 import githubLogo from "../assets/header/githubLogo.png";
 import emailLogo from "../assets/header/emailLogo.png";
+import downArrowsLogo from "../assets/header/downArrows.png";
 
 const Header = () => {
-    const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false);
-    const toggleMenu = () => {
-        setIsMenuVisible(!isMenuVisible);
-      };
-
-const smoothScrollTo = useCallback((targetId: string) => {
-    const start = window.scrollY;
-    const end = targetId === "top"
-        ? 0
-        : (() => {
-            const target = document.getElementById(targetId);
-            if (!target) return start; // fallback to current scroll
-            return target.getBoundingClientRect().top + start;
-        })();
-
-    const distance = end - start;
-    const startTime = performance.now();
-    const duration = 1000;
-
-    const easeInOutQuad = (t: number) => {
-        return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+    const [isMenuVisible, setIsMenuVisible] = useState<boolean>(true);
+    const toggleMenu = (): void => {
+        setIsMenuVisible(isMenuVisible => !isMenuVisible);
     };
 
-    const animateScroll = (currentTime: number) => {
-        const elapsed = currentTime - startTime;
-        const progress = Math.min(elapsed / duration, 1);
+    const smoothScrollTo = useCallback((targetId: string) => {
+        const start: number = window.scrollY;
+        const end: number = targetId === "top"
+            ? 0
+            : (() => {
+                const target = document.getElementById(targetId);
+                if (!target) return start; // fallback to current scroll
+                return target.getBoundingClientRect().top + start;
+            })();
 
-        window.scrollTo(0, start + distance * easeInOutQuad(progress));
+        const distance: number = end - start;
+        const startTime: number = performance.now();
+        const duration: number = 1000;
 
-        if (progress < 1) {
+        const easeInOutQuad = (t: number): number => {
+            return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+        };
+
+        const animateScroll = (currentTime: number): void => {
+            const elapsed: number = currentTime - startTime;
+            const progress: number = Math.min(elapsed / duration, 1);
+
+            window.scrollTo(0, start + distance * easeInOutQuad(progress));
+
+            if (progress < 1) {
             requestAnimationFrame(animateScroll);
-        }
-    };
-
-    requestAnimationFrame(animateScroll);
-}, []);
+            }
+        };
+        requestAnimationFrame(animateScroll);
+    }, []);
 
 
     return (
         <header className={styles.header}>
             <nav className={styles.navbar}>
-                <ul>
+                <ul className={styles.mainList}
+                    style={{
+                        transition: 'transform 1s ease, opacity 1s ease',
+                        transform: !isMenuVisible ? 'translateY(-100%)' : 'translateY(0)',
+                        opacity: !isMenuVisible ? 0 : 1,
+                    }}
+                >
                     <li className={styles.textAnchor}>
-                        <a onClick={() => { smoothScrollTo("top") }}>VI</a>
+                        <a 
+                            onClick={() => { if(isMenuVisible) smoothScrollTo("top") }}
+                            style={{
+                                cursor: isMenuVisible ? 'pointer' : 'default'
+                            }}
+                        >
+                            VI
+                        </a>
                     </li>
                     <li>
-                        <a target='_blank' href="https://github.com/VedranIsak">
+                        <a 
+                            target='_blank'
+                            href="https://github.com/VedranIsak"
+                            style={{
+                                cursor: isMenuVisible ? 'pointer' : 'default'
+                            }}
+                        >
                             <img
                                 src={githubLogo}
                                 alt="Link to Vedran's Github page"
@@ -61,7 +79,13 @@ const smoothScrollTo = useCallback((targetId: string) => {
                         </a>               
                     </li>                    
                     <li>
-                        <a target='_blank' href="https://se.linkedin.com/in/vedran-isak-3a0a49202">
+                        <a 
+                            target='_blank' 
+                            href= "https://se.linkedin.com/in/vedran-isak-3a0a49202"
+                            style={{
+                                cursor: isMenuVisible ? 'pointer' : 'default'
+                            }}
+                        >
                             <img
                                 src={linkedInLogo}
                                 alt="Link to Vedran's LinkedIn page"
@@ -70,7 +94,12 @@ const smoothScrollTo = useCallback((targetId: string) => {
                         </a>               
                     </li>
                     <li>
-                        <a onClick={() => { smoothScrollTo("contactContainer") }}>
+                        <a 
+                            onClick={() => { if(isMenuVisible) smoothScrollTo("contactContainer") }}
+                            style={{
+                                cursor: isMenuVisible ? 'pointer' : 'default'
+                            }}
+                        >
                             <img
                                 src={emailLogo}
                                 alt="Link to email contact form"
@@ -78,14 +107,39 @@ const smoothScrollTo = useCallback((targetId: string) => {
                             />    
                         </a>                           
                     </li>
+                    <li className={styles.textAnchor}>
+                        <a 
+                            onClick={() => { if(isMenuVisible) toggleMenu()}}
+                            style={{
+                                cursor: isMenuVisible ? 'pointer' : 'default'
+                            }}
+                        >
+                            X
+                        </a>
+                    </li>
                 </ul>
-                {/* <h2 
-                    className={styles.menuButton}
-                    onClick={() => { toggleMenu(); }}
-                >
-                    + Menu
-                </h2> */}
-                {/* <SideMenu isMenuVisible={isMenuVisible} setIsMenuVisible={setIsMenuVisible} /> */}
+                <ul
+                    style={{
+                        position: 'absolute',
+                        transition: `transform 1s ease, opacity 1s ease`,
+                        transform: isMenuVisible ? 'translateY(100%)' : 'translateY(0)',
+                        opacity: isMenuVisible ? 0 : 1,
+                    }}
+                >       
+                    <a 
+                        className={styles.textAnchor} 
+                        onClick={() => { if(!isMenuVisible) toggleMenu(); }}
+                        style={{
+                            cursor: !isMenuVisible ? 'pointer' : 'default'
+                        }}
+                    >
+                        <img 
+                            src={downArrowsLogo}
+                            title='AI generated image of two arrows pointing down'
+                            alt='Down arrow menu button'
+                        />
+                    </a>
+                </ul>
             </nav>
         </header>
     )

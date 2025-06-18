@@ -44,25 +44,25 @@ const GetCareerProjects = (): Project[] => (
     new Array<Project>(
         new Project(
             "Report Service maintenance and optimization", 
-            "Used the ITextSharp nuget and SQL Server to maintain and optimize a PDF Document Service at SundaHus", 
+            "Used the ITextSharp nuget and SQL Server to maintain and optimize a PDF Document Service at SundaHus.", 
             cSharpLogoSrc, 
             cSharpAlt, 
             cSharpTitle),
         new Project(
             "Angular Material Prototype", 
-            "Developed, after extensive prep work doing interviews and Figma prototyping, a Angular Material showcase prototype for Region Östergötland", 
+            "Developed, after extensive prep work doing interviews and Figma prototyping, a Angular Material showcase prototype for Region Östergötland.", 
             angularLogoSrc, 
             angularAlt, 
             angularTitle),
         new Project(
             "EPD Module Development", 
-            "Expanded the functionality for company workers and customers to input and retrieve new EPD data at SundaHus", 
+            "Expanded the functionality for company workers and customers to input and retrieve new EPD data at SundaHus.", 
             cSharpLogoSrc, 
             angularAlt, 
             angularTitle),
         new Project(
             "System maintenence", 
-            "Did extensive maintenence work and bug fixes on both the company`s website and it`s desktop applications at SundaHus", 
+            "Did extensive maintenence work and bug fixes on both the company`s website and it`s desktop applications at SundaHus.", 
             cSharpLogoSrc, 
             cSharpAlt, 
             cSharpTitle),
