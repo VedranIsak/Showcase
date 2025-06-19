@@ -24,13 +24,24 @@ const Top = () => {
                     alt="Self taken profile image of Vedran Isak"
                     title="Self taken profile image of Vedran Isak"
                 />
+                <img 
+                    data-id="top-img"
+                    onClick={() => { switchProfileImg(); }}
+                    src={imgSrc}
+                    alt="Self taken profile image of Vedran Isak"
+                    title="Self taken profile image of Vedran Isak"
+                />
+                <img 
+                    data-id="top-img"
+                    onClick={() => { switchProfileImg(); }}
+                    src={imgSrc}
+                    alt="Self taken profile image of Vedran Isak"
+                    title="Self taken profile image of Vedran Isak"
+                />
             </div>
             <div className={styles.textContainer}>
                 <h1>
-                    <span className='titleWord titleWord1'>Hi</span>
-                    <span>! </span> 
-                    <span className='titleWord titleWord2'>I'm </span> 
-                    <span className='titleWord titleWord3'>Vedran Isak</span>
+                    Welcome! I'm Vedran Isak.
                 </h1>
                 <h2>
                     With this site you can get to know me and see some of my software related endeavours.

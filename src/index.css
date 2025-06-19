@@ -1,12 +1,4 @@
 :root {
-    --primary-back-color: #301934;
-    --secondary-back-color: #800080; 
-    --tertiary-back-color: #000000;
-    --quaternary-back-color: #ffffff;
-    --primary-text-color: #ffffff;
-    --secondary-text-color: #301934;
-    --tertiary-text-color: #000000;
-    --quaternary-text-color: #800080;
     --page-margin: 50px;
     --standard-padding: 10px;
     --large-padding: 20px;
@@ -19,7 +11,7 @@
     font-family: "Cal Sans", Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-optical-sizing: auto;
-    color: var(--primary-text-color);
+    color: white;
   }
 
   html, body {
@@ -27,12 +19,8 @@
   }
 
   body {
-      background: #301934;
-      background: linear-gradient(135deg, #301934 20%, rgba(0, 0, 0, 1) 100%);
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+background: #a30052;
+background: linear-gradient(90deg,#a30052 0%, #310080 99%);
   }
 
   a {
@@ -45,21 +33,21 @@
 }
 
 .titleWord1 {
-  --color-1: #800080;
-  --color-2: #a27ba9;
-  --color-3: black;
+  --color-1: #a30052;
+  --color-2: #a9befc;
+  --color-3: #310080;
 }
 
 .titleWord2 {
-  --color-1: black;
-  --color-2: #a27ba9;
-  --color-3: #800080;
+  --color-1: #310080;
+  --color-2: #a9befc;
+  --color-3: #a30052;
 }
 
 .titleWord3 {
-  --color-1: #a27ba9;
-  --color-2: #800080;
-  --color-3: black;
+  --color-1: #a9befc;
+  --color-2: #a30052;
+  --color-3: #310080;
 }
 
 @keyframes color-animation {

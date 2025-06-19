@@ -1,5 +1,4 @@
 .container {
-    color: var(--primary-text-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,22 +7,27 @@
 
 .imgContainer {
     cursor: pointer;
-    border-radius: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border: 15px solid white;
-    transition: border-color .5s;
-}
-
-.imgContainer:hover {
-    border-color: #800080;
+    align-items: flex-end;
 }
 
 .imgContainer img {
+    border-radius: 100%;
+    border: 5px solid white;
+    transition: border-color .5s;
+    width: 250px;
+    height: 250px;
+}
+
+.imgContainer img:nth-of-type(2) {
     width: 350px;
     height: 350px;
+}
+
+.imgContainer img:hover {
+    border-color: white;
 }
 
 .textContainer {
@@ -36,22 +40,24 @@
     margin-bottom: var(--page-margin);
     padding: var(--large-padding);
     width: 600px;
-    background: white;
-    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 5px solid white;
+    border-radius: 16px;
+    transition: .5s border-color;
+}
+
+.textContainer:hover {
+    border-color: white;
 }
 
 .textContainer h1, .textContainer h2 {
     text-align: center;
+    color: white;
 }
 
 .textContainer h1 {
     padding: 15px;
-}
-
-.textContainer h1 span {
-    color: black;
-}
-
-.textContainer h2 {
-    color: black;
 }

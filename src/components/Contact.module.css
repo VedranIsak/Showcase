@@ -5,6 +5,7 @@
     align-items: center;
     height: 500px;
     width: 100%;
+    margin-bottom: var(--page-margin);
 }
 
 .header {
@@ -27,6 +28,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 5px solid white;
+    border-radius: 50px;
+    width: 400px;
+    padding: var(--large-padding);
+    transition: border-color .5s;
+}
+
+.formContainer:hover {
+    border-color: white;
 }
 
 label, input, textarea {
@@ -52,9 +66,17 @@ input[type="submit"] {
     height: 50px;
     border-radius: 50px;
     outline: none;
-    border: none;
     cursor: pointer;
-    background: #800080;
     padding: var(--standard-padding);
     color: white;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    transition: .5s border-color;
+}
+
+input[type="submit"]:hover {
+    border-color: white;
 }

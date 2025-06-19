@@ -8,8 +8,10 @@ const Project = ({project}: ProjectProps) => (
             alt={project.imgAlt}
             title={project.imgTitle} 
         />
-        <h2>{project.header}</h2>
-        <h3>{project.text}</h3>
+        <div className={styles.textContainer}>
+            <h2>{project.header}</h2>
+            <h3>{project.text}</h3>
+        </div>
     </div>
 )
 

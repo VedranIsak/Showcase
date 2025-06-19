@@ -11,7 +11,7 @@ const Skills = () =>
                 <h2>
                     <span className='titleWord titleWord1'>Some of </span>
                     <span className='titleWord titleWord2'>my areas of </span>
-                    <span className='titleWord titleWord3'>knowledge</span>7
+                    <span className='titleWord titleWord3'>knowledge</span>
                 </h2>
             </div>
             <div data-id="skills-main-content-container" className={styles.mainContentContainer}>
