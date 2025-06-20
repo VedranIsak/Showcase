@@ -7,23 +7,34 @@ import { GetProjects, GetProjectsHeader } from './helpers/ProjectHelper';
 import ProjectType from './enums/ProjectType';
 import Contact from './components/Contact';
 import About from './components/About';
+import FadeInSection from './components/FadeInSection';
 
 function App() {
   return (
     <>
       <Header />
       <Top />
-      <Skills />
-      <Projects 
-        projectsHeader = {GetProjectsHeader(ProjectType.HobbyProject)}
-        projectList={GetProjects(ProjectType.HobbyProject)}
-      />
-      <Projects 
-        projectsHeader = {GetProjectsHeader(ProjectType.CareerProject)} 
-        projectList={GetProjects(ProjectType.CareerProject)}
-      />
-      <About />
-      <Contact />
+      <FadeInSection>      
+        <Skills />
+      </FadeInSection>
+      <FadeInSection>
+        <Projects 
+          projectsHeader = {GetProjectsHeader(ProjectType.HobbyProject)}
+          projectList={GetProjects(ProjectType.HobbyProject)}
+        />
+      </FadeInSection>
+      <FadeInSection>
+        <Projects 
+          projectsHeader = {GetProjectsHeader(ProjectType.CareerProject)} 
+          projectList={GetProjects(ProjectType.CareerProject)}
+        />
+      </FadeInSection>
+      <FadeInSection>
+        <About />
+      </FadeInSection>
+      <FadeInSection>
+        <Contact />
+      </FadeInSection>
       <Footer />
     </>
   )
