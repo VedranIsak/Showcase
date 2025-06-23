@@ -5,9 +5,9 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 import { GetProjects, GetProjectsHeader } from './helpers/ProjectHelper';
 import ProjectType from './enums/ProjectType';
-import Contact from './components/Contact';
 import About from './components/About';
 import FadeInSection from './components/FadeInSection';
+import Infos from './components/Infos';
 
 function App() {
   return (
@@ -15,7 +15,10 @@ function App() {
       <Header />
       <Top />
       <FadeInSection>      
-        <Skills />
+        <Infos 
+          infosHeader=''
+          infoList=[]
+        />
       </FadeInSection>
       <FadeInSection>
         <Projects 
@@ -31,9 +34,6 @@ function App() {
       </FadeInSection>
       <FadeInSection>
         <About />
-      </FadeInSection>
-      <FadeInSection>
-        <Contact />
       </FadeInSection>
       <Footer />
     </>

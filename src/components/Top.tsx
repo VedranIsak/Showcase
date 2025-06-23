@@ -24,20 +24,6 @@ const Top = () => {
                     alt="Self taken profile image of Vedran Isak"
                     title="Self taken profile image of Vedran Isak"
                 />
-                <img 
-                    data-id="top-img"
-                    onClick={() => { switchProfileImg(); }}
-                    src={imgSrc}
-                    alt="Self taken profile image of Vedran Isak"
-                    title="Self taken profile image of Vedran Isak"
-                />
-                <img 
-                    data-id="top-img"
-                    onClick={() => { switchProfileImg(); }}
-                    src={imgSrc}
-                    alt="Self taken profile image of Vedran Isak"
-                    title="Self taken profile image of Vedran Isak"
-                />
             </div>
             <div className={styles.textContainer}>
                 <h1>

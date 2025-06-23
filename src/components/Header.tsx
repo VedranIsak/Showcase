@@ -2,7 +2,6 @@ import { useCallback, useState } from 'react';
 import styles from './Header.module.css';
 import linkedInLogo from "../assets/header/linkedInLogo.webp";
 import githubLogo from "../assets/header/githubLogo.png";
-import emailLogo from "../assets/header/emailLogo.png";
 import downArrowsLogo from "../assets/header/downArrows.png";
 
 const Header = () => {
@@ -49,16 +48,13 @@ const Header = () => {
                 <ul className={styles.mainList}
                     style={{
                         transition: 'transform 1s ease, opacity 1s ease',
-                        transform: !isMenuVisible ? 'translateY(-100%)' : 'translateY(0)',
+                        transform: !isMenuVisible ? 'translateY(-200%)' : 'translateY(0)',
                         opacity: !isMenuVisible ? 0 : 1,
                     }}
                 >
                     <li className={styles.textAnchor}>
                         <a 
                             onClick={() => { if(isMenuVisible) smoothScrollTo("top") }}
-                            style={{
-                                cursor: isMenuVisible ? 'pointer' : 'default'
-                            }}
                         >
                             VI
                         </a>
@@ -67,9 +63,6 @@ const Header = () => {
                         <a 
                             target='_blank'
                             href="https://github.com/VedranIsak"
-                            style={{
-                                cursor: isMenuVisible ? 'pointer' : 'default'
-                            }}
                         >
                             <img
                                 src={githubLogo}
@@ -82,9 +75,6 @@ const Header = () => {
                         <a 
                             target='_blank' 
                             href= "https://se.linkedin.com/in/vedran-isak-3a0a49202"
-                            style={{
-                                cursor: isMenuVisible ? 'pointer' : 'default'
-                            }}
                         >
                             <img
                                 src={linkedInLogo}
@@ -93,23 +83,9 @@ const Header = () => {
                             />    
                         </a>               
                     </li>
-                    <li>
-                        <a 
-                            onClick={() => { if(isMenuVisible) smoothScrollTo("contactContainer") }}
-                            style={{
-                                cursor: isMenuVisible ? 'pointer' : 'default'
-                            }}
-                        >
-                            <img
-                                src={emailLogo}
-                                alt="Link to email contact form"
-                                title="Image by shunesburg69 from openclipart https://openclipart.org/detail/295555/red-mail-icon" 
-                            />    
-                        </a>                           
-                    </li>
                     <li className={styles.textAnchor}>
                         <a 
-                            onClick={() => { if(isMenuVisible) toggleMenu()}}
+                            onClick={toggleMenu}
                             style={{
                                 cursor: isMenuVisible ? 'pointer' : 'default'
                             }}
@@ -122,13 +98,13 @@ const Header = () => {
                     style={{
                         position: 'absolute',
                         transition: `transform 1s ease, opacity 1s ease`,
-                        transform: isMenuVisible ? 'translateY(100%)' : 'translateY(0)',
+                        transform: isMenuVisible ? 'translateY(200%)' : 'translateY(0)',
                         opacity: isMenuVisible ? 0 : 1,
                     }}
                 >       
                     <a 
                         className={styles.textAnchor} 
-                        onClick={() => { if(!isMenuVisible) toggleMenu(); }}
+                        onClick={toggleMenu}
                         style={{
                             cursor: !isMenuVisible ? 'pointer' : 'default'
                         }}

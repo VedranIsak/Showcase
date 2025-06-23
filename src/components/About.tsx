@@ -10,7 +10,8 @@ const About = () => {
                     <span className='titleWord titleWord3'>facts</span>
                 </h2>
             </div>
-            <div className={styles.container}>
+            <div className={styles.contentContainer}>
+                            <div className={styles.container}>
                 <div className={styles.headerContainer}>
                     <h2>My overall life</h2>
                 </div>
@@ -18,14 +19,9 @@ const About = () => {
                     <h3>
                         I was born in 1998 in the lake town of Motala. 
                         I spent all my life there up until 2020, when I moved to Linkoping.
-                        During my time in Motala I mainly focused on living a normal childhood. I was a
-                        ferocious reader, played a lot of sports and developed an unusually high interest in 
-                        geopolitics and history. 
-                    </h3>
-                    <h3>
-                        In the summer of 2021, one year after moving to Linkoping, I graduated from Linkoping university with a Bachelor's degree in Information Systems
-                        and I began working as a software developer shortly there after. I spent three years working as a software developer for Sundahus, a 
-                        business that operated mainly in the construction industry.
+                        I graduated in 2021 from Linkoping University with a bachelor's degree in Information Systems, 
+                        specializing in software development. I started shortly thereafter working as a software developer for Sundahus.
+                        I did this for three years, until 2024, before I took a break.
                     </h3>
                 </div>
             </div>
@@ -34,7 +30,12 @@ const About = () => {
                     <h2>My interests</h2>
                 </div>
                 <div className={styles.textContainer}>
-                    <h3>My hobbies are PING PONG, NUDE MALE WRESTLING</h3>
+                    <h3>
+                        My main interest in terms of software development is most likely mobile app development.
+                        This is an area I would like to excel at in the future. Previously my main interests have been 
+                        in web development, using React and .NET. Apart from that I am a huge nerd also when it comes to
+                        history and geopolitics.
+                    </h3>
                 </div>
             </div>
             <div className={styles.container}>
@@ -43,10 +44,12 @@ const About = () => {
                 </div>
                 <div className={styles.textContainer}>
                     <h3>
-                    I'm a tad bit of an extravagant individual. But at the same time I'm someone who can often be fairly reserved.
-                    Friends and family would describe me first and foremost as deeply loyal, empathetic and incredibly determined.
+                        I'm a tad bit of an extravagant individual. But at the same time I'm someone who can often be fairly reserved.
+                        Friends and family would describe me first and foremost as deeply loyal, empathetic and incredibly determined.
+                        I am, to my core, an introvert. But at the same time I enjoy spending time with people, but preferably in chunks.
                     </h3>
                 </div>
+            </div>
             </div>
         </div>
     )
