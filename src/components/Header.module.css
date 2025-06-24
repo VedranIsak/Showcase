@@ -58,7 +58,7 @@ a {
 }
 
 .textAnchor {
-  background: #a30052;
+  background: #5a0148;
   border-radius: 100px;
   transition: var(--small-border-transition);
   display: flex;

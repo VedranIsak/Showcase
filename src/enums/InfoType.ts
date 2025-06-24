@@ -1,6 +1,7 @@
 enum InfoType {
     Skills, 
-    About
+    About,
+    Other
 }
 
 export default InfoType;

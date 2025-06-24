@@ -1,19 +1,26 @@
-import splitSentenceByWords from '../helpers/HeaderHelper';
 import InfoModel from '../models/InfoModel';
 import InfosProps from '../props/InfosProps';
 import InfoProps from '../props/InfoProps';
-import styles from './Info.module.css';
+import styles from './Infos.module.css';
+import './Infos.css';
 import { JSX } from 'react';
+import PageHeader from './PageHeader';
+import CircleBackground from './CircleBackground';
+import CircleBackgroundSide from '../enums/CircleBackgroundSide';
 
-const Infos = ({ infosHeader, infoList }: InfosProps) => 
+const Infos: React.FC<InfosProps> = ({ infosHeader, infoList }: InfosProps): JSX.Element => 
 {
 
-    const Info = ({info}: InfoProps) => (
-        <div className={styles.container}>
-            <img
-                src={info.imgSrc}
+    const Info: React.FC<InfoProps> = ({info}: InfoProps): JSX.Element => (
+        <div data-id="infos-container" className={styles.container}>
+            <img 
                 alt={info.imgAlt}
-                title={info.imgTitle} 
+                title={info.imgTitle}
+                src={info.imgSrc} 
+                className={styles.img}
+                style={{
+                    display: info.imgSrc == "" ? "none" : "block"
+                }}
             />
             <div className={styles.textContainer}>
                 <h2>{info.header}</h2>
@@ -26,18 +33,12 @@ const Infos = ({ infosHeader, infoList }: InfosProps) =>
         <Info info={info} />
     ));
 
-    const [part1, part2, part3] = splitSentenceByWords(infosHeader);
-
     return (       
-        <div className={styles.container} data-id="skills-container">
-            <div className={styles.headerContainer}>
-                <h2>
-                    <span className='titleWord titleWord1'>{part1} </span>
-                    <span className='titleWord titleWord2'>{part2} </span>
-                    <span className='titleWord titleWord3'>{part3}</span>
-                </h2>
-            </div>
-            <div data-id="skills-main-content-container" className={styles.mainContentContainer}>
+        <div className={styles.mainContainer} data-id="infos-main-container">
+            <CircleBackground side={CircleBackgroundSide.left} />
+            <CircleBackground side={CircleBackgroundSide.right} />
+            <PageHeader headerText={infosHeader} />
+            <div data-id="infos-content-container" className={styles.contentContainer}>
                 {infos}
             </div>
         </div>

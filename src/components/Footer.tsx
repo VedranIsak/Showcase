@@ -1,6 +1,7 @@
+import { JSX } from 'react';
 import styles from './Footer.module.css';
 
-const Footer = () => 
+const Footer: React.FC = (): JSX.Element => 
 (
   <div className={styles.container}>
     <div className={styles.headerContainer}>

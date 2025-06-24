@@ -1,7 +1,7 @@
-import InfoModel from "../models/InfoModel";
+import Info from "../models/InfoModel";
 
 interface InfoProps {
-    info: InfoModel
+    info: Info
 }
 
 export default InfoProps

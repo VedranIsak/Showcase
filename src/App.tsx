@@ -1,24 +1,25 @@
 import Header from './components/Header';
 import Top from './components/Top';
-import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import { GetProjects, GetProjectsHeader } from './helpers/ProjectHelper';
 import ProjectType from './enums/ProjectType';
-import About from './components/About';
 import FadeInSection from './components/FadeInSection';
 import Infos from './components/Infos';
+import { GetInfos, GetInfosHeader } from './helpers/InfoHelper';
+import InfoType from './enums/InfoType';
+import { JSX } from 'react';
 
-function App() {
+const App: React.FC = (): JSX.Element => {
   return (
     <>
       <Header />
       <Top />
       <FadeInSection>      
-        <Infos 
-          infosHeader=''
-          infoList=[]
-        />
+        <Infos
+          infosHeader={GetInfosHeader(InfoType.Skills)}
+          infoList={GetInfos(InfoType.Skills)}
+         />
       </FadeInSection>
       <FadeInSection>
         <Projects 
@@ -33,7 +34,10 @@ function App() {
         />
       </FadeInSection>
       <FadeInSection>
-        <About />
+        <Infos
+          infosHeader={GetInfosHeader(InfoType.About)}
+          infoList={GetInfos(InfoType.About)}
+        />
       </FadeInSection>
       <Footer />
     </>

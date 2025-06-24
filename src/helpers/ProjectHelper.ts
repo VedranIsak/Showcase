@@ -4,14 +4,14 @@ import angularLogoSrc from '../assets/projects/angularLogo.png';
 import reactLogoSrc from '../assets/projects/reactLogo.png';
 import cSharpLogoSrc from '../assets/projects/cSharpLogo.png';
 
-const reactTitle = "AI generated image of the React symbol";
-const reactAlt = "AI generated image of the React symbol";
-const angularTitle = "AI generated image of the Angular symbol";
-const angularAlt = "AI generated image of the Angular symbol";
-const cSharpTitle = "AI generated image of the C# symbol";
-const cSharpAlt = "AI generated image of the C# symbol";
+const reactTitle: string = "AI generated image of the React symbol";
+const reactAlt: string = "AI generated image of the React symbol";
+const angularTitle: string = "AI generated image of the Angular symbol";
+const angularAlt: string = "AI generated image of the Angular symbol";
+const cSharpTitle: string = "AI generated image of the C# symbol";
+const cSharpAlt: string = "AI generated image of the C# symbol";
 
-const GetSchoolProjects = (): Project[] => (
+const GetSchoolProjects: () => Project[] = (): Project[] => (
     new Array<Project>(
         new Project(
             "Yugoslav wars doc site (not deployed)", 
@@ -40,7 +40,7 @@ const GetSchoolProjects = (): Project[] => (
     )
 )
 
-const GetCareerProjects = (): Project[] => (
+const GetCareerProjects: () => Project[] = (): Project[] => (
     new Array<Project>(
         new Project(
             "Report Service maintenance and optimization", 
@@ -69,7 +69,7 @@ const GetCareerProjects = (): Project[] => (
     )
 )
 
-const GetProjectsHeader = (projectType: ProjectType): string => {
+const GetProjectsHeader: (projectType: ProjectType) => string = (projectType: ProjectType): string => {
     switch(projectType) {
         case ProjectType.CareerProject:
             return "Some of my past school & work projects";
@@ -80,7 +80,7 @@ const GetProjectsHeader = (projectType: ProjectType): string => {
     }
 }
 
-const GetProjects = (projectType: ProjectType): Project[] => {
+const GetProjects: (projectType: ProjectType) => Project[] = (projectType: ProjectType): Project[] => {
     switch(projectType) {
         case ProjectType.CareerProject:
             return GetCareerProjects();

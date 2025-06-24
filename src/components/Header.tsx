@@ -1,12 +1,14 @@
-import { useCallback, useState } from 'react';
+import { JSX, useCallback, useState } from 'react';
 import styles from './Header.module.css';
 import linkedInLogo from "../assets/header/linkedInLogo.webp";
 import githubLogo from "../assets/header/githubLogo.png";
 import downArrowsLogo from "../assets/header/downArrows.png";
 
-const Header = () => {
-    const [isMenuVisible, setIsMenuVisible] = useState<boolean>(true);
-    const toggleMenu = (): void => {
+const Header: React.FC = (): JSX.Element => {
+    const [isMenuVisible, setIsMenuVisible]: [boolean, React.Dispatch<React.SetStateAction<boolean>>]
+    = useState<boolean>(true);
+
+    const toggleMenu: () => void = (): void => {
         setIsMenuVisible(isMenuVisible => !isMenuVisible);
     };
 
@@ -24,11 +26,12 @@ const Header = () => {
         const startTime: number = performance.now();
         const duration: number = 1000;
 
-        const easeInOutQuad = (t: number): number => {
+        const easeInOutQuad: (t: number) => number = (t: number): number => {
             return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
         };
 
-        const animateScroll = (currentTime: number): void => {
+        const animateScroll: (currentTime: number) => void 
+        = (currentTime: number): void => {
             const elapsed: number = currentTime - startTime;
             const progress: number = Math.min(elapsed / duration, 1);
 

@@ -4,10 +4,11 @@ import ProjectProps from '../props/ProjectProps';
 import ProjectModel from '../models/ProjectModel';
 import './Projects.css';
 import { JSX } from 'react';
-import splitSentenceByWords from '../helpers/HeaderHelper';
+import PageHeader from './PageHeader';
 
-const Projects = ({projectsHeader, projectList}: ProjectsProps) => {
-    const Project = ({project}: ProjectProps) => (
+const Projects: React.FC<ProjectsProps> = ({projectsHeader, projectList}: ProjectsProps): JSX.Element => {
+
+    const Project: React.FC<ProjectProps> = ({project}: ProjectProps): JSX.Element => (
         <div className={styles.container}>
             <img
                 src={project.imgSrc}
@@ -25,17 +26,9 @@ const Projects = ({projectsHeader, projectList}: ProjectsProps) => {
         <Project project={project} />
     ));
 
-const [part1, part2, part3] = splitSentenceByWords(projectsHeader);
-
     return (
         <div className={styles.mainContainer}>
-            <div className={styles.headerContainer}>
-                <h2>
-                    <span className='titleWord titleWord1'>{part1} </span>
-                    <span className='titleWord titleWord2'>{part2} </span>
-                    <span className='titleWord titleWord3'>{part3}</span>
-                </h2>
-            </div>
+            <PageHeader headerText={projectsHeader} />
             <div data-id="projects-main-content-container" className={styles.mainContentContainer}>
                 {projects}
             </div>

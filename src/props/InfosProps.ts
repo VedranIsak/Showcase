@@ -1,8 +1,8 @@
-import InfoModel from "../models/InfoModel";
+import Info from "../models/InfoModel";
 
 interface InfosProps {
     infosHeader: string;
-    infoList: InfoModel[];
+    infoList: Info[];
 }
 
 export default InfosProps

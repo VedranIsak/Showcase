@@ -1,12 +1,16 @@
 import styles from './Top.module.css';
 import profileImg from "../assets/top/profileImg.jpg";
 import profileImgSynth from '../assets/top/profileImgAlt.jpg';
-import { useState } from 'react';
+import { JSX, useState } from 'react';
 import './Top.css';
+import CircleBackground from './CircleBackground';
+import CircleBackgroundSide from '../enums/CircleBackgroundSide';
 
-const Top = () => {
-    const [imgSrc, setImgSrc] = useState<string>(profileImg);
-    const switchProfileImg = (): void => {
+const Top: React.FC = (): JSX.Element => {
+    const [imgSrc, setImgSrc]: [string, React.Dispatch<React.SetStateAction<string>>] 
+    = useState<string>(profileImg);
+
+    const switchProfileImg: () => void = (): void => {
         (imgSrc == profileImg) 
         ?
         setImgSrc(profileImgSynth)
@@ -16,6 +20,8 @@ const Top = () => {
 
     return (
         <div className={styles.container}>
+            <CircleBackground side={CircleBackgroundSide.left} />
+            <CircleBackground side={CircleBackgroundSide.right} />
             <div className={styles.imgContainer}>
                 <img 
                     data-id="top-img"

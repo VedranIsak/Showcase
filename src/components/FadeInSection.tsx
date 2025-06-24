@@ -1,12 +1,14 @@
 import React, { JSX } from "react";
 import FadeInSectionProps from "../props/FadeInSectionProps";
 
-const FadeInSection: React.FC<FadeInSectionProps> = ({ children }): JSX.Element => {
-  const [isVisible, setVisible] = React.useState(false);
+const FadeInSection: React.FC<FadeInSectionProps> = ({ children }: FadeInSectionProps): JSX.Element => {
+
+  const [isVisible, setVisible]: [boolean, React.Dispatch<React.SetStateAction<boolean>>]
+  = React.useState(false);
   const domRef = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
+    const observer: IntersectionObserver = new IntersectionObserver(entries => {
       entries.forEach(entry => setVisible(entry.isIntersecting));
     });
 
