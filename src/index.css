@@ -33,21 +33,21 @@ a {
 }
 
 .titleWord1 {
-  --color-1: #ffffff;
+  --color-1: #bec969;
   --color-2: #a9befc;
-  --color-3: #310080;
+  --color-3: #c9a669;
 }
 
 .titleWord2 {
-  --color-1: #310080;
+  --color-1: #c9a669;
   --color-2: #a9befc;
-  --color-3: #ffffff;
+  --color-3: #bec969;
 }
 
 .titleWord3 {
   --color-1: #a9befc;
-  --color-2: #ffffff;
-  --color-3: #310080;
+  --color-2: #bec969;
+  --color-3: #c9a669;
 }
 
 
