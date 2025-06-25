@@ -2,7 +2,7 @@
   animation: slideFadeIn .75s ease-out forwards;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 9999;
 }
 
 .navbar {

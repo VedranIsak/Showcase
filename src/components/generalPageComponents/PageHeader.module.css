@@ -1,8 +1,9 @@
 .headerContainer {
     margin-top: var(--page-margin);
-    margin-bottom: 50px;
+    margin-bottom: var(--page-margin);
     width: auto;
-    max-width: 95%;
+    max-width: 90%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;

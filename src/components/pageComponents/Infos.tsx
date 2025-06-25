@@ -19,7 +19,7 @@ const Infos: React.FC<InfosProps> = ({ infosHeader, infoList, circleBackgroundSi
                 src={info.imgSrc} 
                 className={styles.img}
                 style={{
-                    display: info.imgSrc == "" ? "none" : "block"
+                    display: info.imgSrc == null ? "none" : "block"
                 }}
             />
             <div className={styles.textContainer}>
@@ -30,7 +30,7 @@ const Infos: React.FC<InfosProps> = ({ infosHeader, infoList, circleBackgroundSi
     )
 
     const infos: JSX.Element[] = infoList.map((info: InfoModel) => (
-        <Info info={info} />
+        <Info info={info} key={info.header} />
     ));
 
     return (       

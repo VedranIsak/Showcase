@@ -1,3 +1,9 @@
+/* @media (max-width: 650px) {
+    div[data-id="top-text-container"] {
+        width: 90%;
+    }
+} */
+
 @media (max-width: 450px) {
     img[data-id="top-img"] {
         width: 250px;

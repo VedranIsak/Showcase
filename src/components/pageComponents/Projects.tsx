@@ -24,7 +24,7 @@ const Projects: React.FC<ProjectsProps> = ({projectsHeader, projectList, circleB
     )
 
     const projects: JSX.Element[] = projectList.map((project: ProjectModel) => (
-        <Project project={project} />
+        <Project project={project} key={project.header} />
     ));
 
     return (

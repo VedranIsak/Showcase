@@ -22,7 +22,7 @@ const App: React.FC = (): JSX.Element => {
           infoList={GetInfos(InfoType.Skills)}
           circleBackgroundSide={CircleBackgroundSide.right}
          />
-      </FadeInSection>
+      </FadeInSection> 
       <FadeInSection>
         <Projects 
           projectsHeader = {GetProjectsHeader(ProjectType.HobbyProject)}
@@ -43,7 +43,7 @@ const App: React.FC = (): JSX.Element => {
           infoList={GetInfos(InfoType.About)}
           circleBackgroundSide={CircleBackgroundSide.left}
         />
-      </FadeInSection>
+      </FadeInSection> 
       <Footer />
     </>
   )

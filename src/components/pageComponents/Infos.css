@@ -26,11 +26,10 @@
 
 @media (max-width: 400px) {
     div[data-id="infos-container"] {
-        width: 240px;
+        width: 90%;
     }
 
     div[data-id="infos-container"] img {
-        width: 224px;
-        height: 149px;
+        display: none !important;
     }
 }

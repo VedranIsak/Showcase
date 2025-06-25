@@ -87,14 +87,7 @@ const Header: React.FC = (): JSX.Element => {
                         </a>               
                     </li>
                     <li className={styles.textAnchor}>
-                        <a 
-                            onClick={toggleMenu}
-                            style={{
-                                cursor: isMenuVisible ? 'pointer' : 'default'
-                            }}
-                        >
-                            X
-                        </a>
+                        <a onClick={toggleMenu}>X</a>
                     </li>
                 </ul>
                 <ul
@@ -108,9 +101,6 @@ const Header: React.FC = (): JSX.Element => {
                     <a 
                         className={styles.textAnchor} 
                         onClick={toggleMenu}
-                        style={{
-                            cursor: !isMenuVisible ? 'pointer' : 'default'
-                        }}
                     >
                         <img 
                             src={downArrowsLogo}

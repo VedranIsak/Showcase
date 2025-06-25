@@ -30,7 +30,7 @@ const Top: React.FC<TopProps> = ({circleBackgroundSide}: TopProps): JSX.Element 
                     title="Self taken profile image of Vedran Isak"
                 />
             </div>
-            <div className={styles.textContainer}>
+            <div className={styles.textContainer} data-id="top-text-container">
                 <h1>
                     Welcome! I'm Vedran Isak.
                 </h1>
