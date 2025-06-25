@@ -4,9 +4,9 @@ import profileImgSynth from '../assets/top/profileImgAlt.jpg';
 import { JSX, useState } from 'react';
 import './Top.css';
 import CircleBackground from './CircleBackground';
-import CircleBackgroundSide from '../enums/CircleBackgroundSide';
+import TopProps from '../props/TopProps';
 
-const Top: React.FC = (): JSX.Element => {
+const Top: React.FC<TopProps> = ({circleBackgroundSide}: TopProps): JSX.Element => {
     const [imgSrc, setImgSrc]: [string, React.Dispatch<React.SetStateAction<string>>] 
     = useState<string>(profileImg);
 
@@ -20,8 +20,7 @@ const Top: React.FC = (): JSX.Element => {
 
     return (
         <div className={styles.container}>
-            <CircleBackground side={CircleBackgroundSide.left} />
-            <CircleBackground side={CircleBackgroundSide.right} />
+            <CircleBackground side={circleBackgroundSide} />
             <div className={styles.imgContainer}>
                 <img 
                     data-id="top-img"

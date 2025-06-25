@@ -8,7 +8,7 @@ import PageHeader from './PageHeader';
 import CircleBackground from './CircleBackground';
 import CircleBackgroundSide from '../enums/CircleBackgroundSide';
 
-const Infos: React.FC<InfosProps> = ({ infosHeader, infoList }: InfosProps): JSX.Element => 
+const Infos: React.FC<InfosProps> = ({ infosHeader, infoList, circleBackgroundSide }: InfosProps): JSX.Element => 
 {
 
     const Info: React.FC<InfoProps> = ({info}: InfoProps): JSX.Element => (
@@ -35,8 +35,7 @@ const Infos: React.FC<InfosProps> = ({ infosHeader, infoList }: InfosProps): JSX
 
     return (       
         <div className={styles.mainContainer} data-id="infos-main-container">
-            <CircleBackground side={CircleBackgroundSide.left} />
-            <CircleBackground side={CircleBackgroundSide.right} />
+            <CircleBackground side={circleBackgroundSide} />
             <PageHeader headerText={infosHeader} />
             <div data-id="infos-content-container" className={styles.contentContainer}>
                 {infos}

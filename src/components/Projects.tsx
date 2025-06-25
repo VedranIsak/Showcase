@@ -5,8 +5,9 @@ import ProjectModel from '../models/ProjectModel';
 import './Projects.css';
 import { JSX } from 'react';
 import PageHeader from './PageHeader';
+import CircleBackground from './CircleBackground';
 
-const Projects: React.FC<ProjectsProps> = ({projectsHeader, projectList}: ProjectsProps): JSX.Element => {
+const Projects: React.FC<ProjectsProps> = ({projectsHeader, projectList, circleBackgroundSide}: ProjectsProps): JSX.Element => {
 
     const Project: React.FC<ProjectProps> = ({project}: ProjectProps): JSX.Element => (
         <div className={styles.container}>
@@ -29,6 +30,7 @@ const Projects: React.FC<ProjectsProps> = ({projectsHeader, projectList}: Projec
     return (
         <div className={styles.mainContainer}>
             <PageHeader headerText={projectsHeader} />
+            <CircleBackground side={circleBackgroundSide} />
             <div data-id="projects-main-content-container" className={styles.mainContentContainer}>
                 {projects}
             </div>
