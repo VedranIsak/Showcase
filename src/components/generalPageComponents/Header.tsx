@@ -1,8 +1,8 @@
 import { JSX, useCallback, useState } from 'react';
 import styles from './Header.module.css';
-import linkedInLogo from "../assets/header/linkedInLogo.webp";
-import githubLogo from "../assets/header/githubLogo.png";
-import downArrowsLogo from "../assets/header/downArrows.png";
+import linkedInLogo from "../../assets/header/linkedInLogo.webp";
+import githubLogo from "../../assets/header/githubLogo.png";
+import downArrowsLogo from "../../assets/header/downArrows.png";
 
 const Header: React.FC = (): JSX.Element => {
     const [isMenuVisible, setIsMenuVisible]: [boolean, React.Dispatch<React.SetStateAction<boolean>>]

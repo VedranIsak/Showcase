@@ -1,11 +1,11 @@
 import styles from './Projects.module.css';
-import ProjectsProps from '../props/ProjectsProps';
-import ProjectProps from '../props/ProjectProps';
-import ProjectModel from '../models/ProjectModel';
+import ProjectsProps from '../../props/ProjectsProps';
+import ProjectProps from '../../props/ProjectProps';
+import ProjectModel from '../../models/ProjectModel';
 import './Projects.css';
 import { JSX } from 'react';
-import PageHeader from './PageHeader';
-import CircleBackground from './CircleBackground';
+import PageHeader from '../generalPageComponents/PageHeader';
+import CircleBackground from '../designComponents/CircleBackground';
 
 const Projects: React.FC<ProjectsProps> = ({projectsHeader, projectList, circleBackgroundSide}: ProjectsProps): JSX.Element => {
 

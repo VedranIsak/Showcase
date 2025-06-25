@@ -1,6 +1,7 @@
 import { JSX } from "react";
-import PageHeaderProps from "../props/PageHeaderProps";
+import PageHeaderProps from "../../props/PageHeaderProps";
 import styles from './PageHeader.module.css';
+import './PageHeader.css';
 
 const PageHeader: React.FC<PageHeaderProps> = ({headerText}: PageHeaderProps): JSX.Element => {
     const splitSentenceByWords: (sentece: string) => [string, string, string] 

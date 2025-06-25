@@ -1,15 +1,14 @@
-import Header from './components/Header';
-import Top from './components/Top';
-import Projects from './components/Projects';
-import Footer from './components/Footer';
+import Header from './components/generalPageComponents/Header';
+import Top from './components/pageComponents/Top';
+import Projects from './components/pageComponents/Projects';
+import Footer from './components/generalPageComponents/Footer';
 import { GetProjects, GetProjectsHeader } from './helpers/ProjectHelper';
 import ProjectType from './enums/ProjectType';
-import FadeInSection from './components/FadeInSection';
-import Infos from './components/Infos';
+import FadeInSection from './components/designComponents/FadeInSection';
+import Infos from './components/pageComponents/Infos';
 import { GetInfos, GetInfosHeader } from './helpers/InfoHelper';
 import InfoType from './enums/InfoType';
 import { JSX } from 'react';
-import CircleBackground from './components/CircleBackground';
 import CircleBackgroundSide from './enums/CircleBackgroundSide';
 
 const App: React.FC = (): JSX.Element => {

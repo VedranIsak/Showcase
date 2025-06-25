@@ -1,10 +1,10 @@
 import styles from './Top.module.css';
-import profileImg from "../assets/top/profileImg.jpg";
-import profileImgSynth from '../assets/top/profileImgAlt.jpg';
+import profileImg from "../../assets/top/profileImg.jpg";
+import profileImgSynth from '../../assets/top/profileImgAlt.jpg';
 import { JSX, useState } from 'react';
 import './Top.css';
-import CircleBackground from './CircleBackground';
-import TopProps from '../props/TopProps';
+import CircleBackground from '../designComponents/CircleBackground';
+import TopProps from '../../props/TopProps';
 
 const Top: React.FC<TopProps> = ({circleBackgroundSide}: TopProps): JSX.Element => {
     const [imgSrc, setImgSrc]: [string, React.Dispatch<React.SetStateAction<string>>] 

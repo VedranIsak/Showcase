@@ -1,12 +1,12 @@
-import InfoModel from '../models/InfoModel';
-import InfosProps from '../props/InfosProps';
-import InfoProps from '../props/InfoProps';
+import InfoModel from '../../models/InfoModel';
+import InfosProps from '../../props/InfosProps';
+import InfoProps from '../../props/InfoProps';
 import styles from './Infos.module.css';
 import './Infos.css';
 import { JSX } from 'react';
-import PageHeader from './PageHeader';
-import CircleBackground from './CircleBackground';
-import CircleBackgroundSide from '../enums/CircleBackgroundSide';
+import PageHeader from '../generalPageComponents/PageHeader';
+import CircleBackground from '../designComponents/CircleBackground';
+import CircleBackgroundSide from '../../enums/CircleBackgroundSide';
 
 const Infos: React.FC<InfosProps> = ({ infosHeader, infoList, circleBackgroundSide }: InfosProps): JSX.Element => 
 {

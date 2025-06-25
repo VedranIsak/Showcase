@@ -1,7 +1,7 @@
 import { JSX } from "react";
 import './CircleBackground.css';
-import CircleBackgroundProps from "../props/CircleBackgroundProps";
-import CircleBackgroundSide from "../enums/CircleBackgroundSide";
+import CircleBackgroundProps from "../../props/CircleBackgroundProps";
+import CircleBackgroundSide from "../../enums/CircleBackgroundSide";
 
 const CircleBackground: React.FC<CircleBackgroundProps> = ({side}: CircleBackgroundProps): JSX.Element => {
     return (

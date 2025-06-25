@@ -1,5 +1,6 @@
 import React, { JSX } from "react";
-import FadeInSectionProps from "../props/FadeInSectionProps";
+import FadeInSectionProps from "../../props/FadeInSectionProps";
+import './FadeInSection.css';
 
 const FadeInSection: React.FC<FadeInSectionProps> = ({ children }: FadeInSectionProps): JSX.Element => {
 
