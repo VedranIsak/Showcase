@@ -2,6 +2,7 @@
     --page-margin: 50px;
     --standard-padding: 10px;
     --large-padding: 20px;
+    --border: 15px solid white;
   }
 
 * {
@@ -17,8 +18,7 @@
 html, body {
   height: auto;
   max-width: 100vw;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow-x: clip;
   }
 
 body {
@@ -33,5 +33,6 @@ a {
 @media (max-width: 900px) {
     :root {
       --page-margin: 25px;
+      --border: 7.5px solid white;
     }
   }

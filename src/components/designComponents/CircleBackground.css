@@ -1,7 +1,7 @@
 .circleBackground {
     position: absolute;
     top: 20%;
-    z-index: -1;
+    z-index: 0;
 }
 
 .rightSide {
@@ -25,6 +25,11 @@
   height: 100px;
   left: -50px;
   bottom: -50px;
+  transition: background .5s;
+}
+
+.smallLeft:hover {
+  background: #5a0148;
 }
 
 .smallRight{
@@ -32,6 +37,11 @@
   height: 100px;
   right: -50px;
   bottom: -50px;
+  transition: background .5s;
+}
+
+.smallRight:hover {
+  background: #5a0148;
 }
 
 .mediumLeft {

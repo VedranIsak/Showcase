@@ -12,7 +12,8 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 50px;
-    border: 15px solid white;
+    border: var(--border);
+    z-index: 1;
 }
 
 .headerContainer h2 {

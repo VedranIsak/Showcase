@@ -13,15 +13,16 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: var(--page-margin);
     margin: 20px;
+    margin-bottom: var(--page-margin);
 }
 
 .container {
-    border: 15px solid white;
+    border: var(--border);
     border-radius: 50px;
-    width: calc(100%-30px);
+    width: 80%;
     margin: 20px;
+    margin-left: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,14 +32,12 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+    padding: var(--large-padding);
+    z-index: 1;
 }
 
 .container:hover {
     border-color: white;
-}
-
-.container {
-    padding: var(--large-padding);
 }
 
 .container img {

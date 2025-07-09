@@ -9,15 +9,27 @@ const FadeInSection: React.FC<FadeInSectionProps> = ({ children }: FadeInSection
   const domRef = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
-    const observer: IntersectionObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => setVisible(entry.isIntersecting));
+  const observer: IntersectionObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        setVisible(true); 
+        if (domRef.current) {
+          observer.unobserve(domRef.current); 
+        }
+      }
     });
+  });
 
-    if(domRef.current) {
-        observer.observe(domRef.current);
+  if (domRef.current) {
+    observer.observe(domRef.current);
+  }
+
+  return () => {
+    if (domRef.current) {
+      observer.unobserve(domRef.current);
     }
-
-  }, []);
+  };
+}, []);
 
   return (
     <div
