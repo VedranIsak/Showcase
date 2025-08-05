@@ -19,7 +19,7 @@
 
 .container {
     border: var(--border);
-    border-radius: 50px;
+    border-radius: 25px;
     width: 80%;
     margin: 20px;
     margin-left: 10%;
@@ -41,18 +41,14 @@
 }
 
 .container img {
-    width: 125px;
-    height: 125px;
+    width: 150px;
+    height: 150px;
 }
 
-.container img, .container h3, .container h4 {
+.container img, .container h3, .container p {
     margin: 5px;
 }
 
-.textContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: inherit;
+.textContainer h3 {
+    text-align: center;
 }

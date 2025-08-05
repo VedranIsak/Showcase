@@ -23,8 +23,8 @@ const Infos: React.FC<InfosProps> = ({ infosHeader, infoList, circleBackgroundSi
                 }}
             />
             <div className={styles.textContainer}>
-                <h2>{info.header}</h2>
-                <h3>{info.text}</h3>
+                <h3>{info.header}</h3>
+                <p>{info.text}</p>
             </div>
         </div>
     )

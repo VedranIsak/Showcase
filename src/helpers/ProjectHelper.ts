@@ -15,25 +15,27 @@ const GetSchoolProjects: () => Project[] = (): Project[] => (
     new Array<Project>(
         new Project(
             "Yugoslav wars doc site (not deployed)", 
-            "Created a (almost fully functioning) website documenting the Yugoslav Wars.", 
+            "Created a (almost fully functioning) website documenting the Yugoslav Wars. " +
+            "The website was written using ASP.NET and also utilized Javascript for the frontend.", 
             cSharpLogoSrc, 
             cSharpAlt, 
             cSharpTitle),
         new Project(
             "Ukraine war doc site (deployed)", 
-            "Created and published a small website documenting the Russo-Ukrainian conflict.", 
+            "Created and published a small website documenting the Russo-Ukrainian conflict. The website was written using React and published through Github Pages.", 
             reactLogoSrc, 
             reactAlt, 
             reactTitle),
         new Project(
             "Old portfolio site (deployed)", 
-            "Created and published a small personal showcase website.", 
+            "Created and published a small personal showcase website. The site was written over the span of a month using React and deployed through Github Pages.", 
             reactLogoSrc, 
             reactAlt, 
             reactTitle),
         new Project(
             "SAAS start up (not deployed)", 
-            "Created a (almost fully functioning) website subscription service for the betting market.", 
+            "Created a (almost fully functioning) website subscription service for the betting market. The site utilized several APIs and external providers " + 
+            "of data services, such as Stripe for payments and Google for user sign in.", 
             cSharpLogoSrc, 
             cSharpAlt, 
             cSharpTitle),
@@ -44,25 +46,29 @@ const GetCareerProjects: () => Project[] = (): Project[] => (
     new Array<Project>(
         new Project(
             "Report Service maintenance and optimization", 
-            "Used the ITextSharp nuget and SQL Server to maintain and optimize a PDF Document Service at SundaHus.", 
+            "Used the ITextSharp nuget and SQL Server to maintain and optimize a Document Service at SundaHus. " +
+            "The service was connected to a ASP.NET MVC website and allowed for around the clock document generation by the end users.", 
             cSharpLogoSrc, 
             cSharpAlt, 
             cSharpTitle),
         new Project(
             "Angular Material Prototype", 
-            "Developed, after extensive prep work doing interviews and Figma prototyping, a Angular Material showcase prototype for Region Östergötland.", 
+            "Developed, after extensive prep work doing interviews and Figma prototyping, a Angular Material showcase prototype for Region Östergötland." +
+            "The project lasted a couple of months and was done together with a colleague.", 
             angularLogoSrc, 
             angularAlt, 
             angularTitle),
         new Project(
             "EPD Module Development", 
-            "Expanded the functionality for company workers and customers to input and retrieve new EPD data at SundaHus.", 
+            "Expanded the functionality for company workers and customers to input and retrieve new EPD data at SundaHus. " +
+            "EPD is standard for accumulating relevant environmental data and the development was done in WPF, ASP.NET MVC and SQL Server.", 
             cSharpLogoSrc, 
             angularAlt, 
             angularTitle),
         new Project(
             "System maintenence", 
-            "Did extensive maintenence work and bug fixes on both the company`s website and it`s desktop applications at SundaHus.", 
+            "Did extensive maintenence work and bug fixes on both the company`s website and it`s desktop applications at SundaHus. " +
+            "The work involved technologies such as WPF, ASP.NET MVC, Javascript (jQuery), SQL Server and React.", 
             cSharpLogoSrc, 
             cSharpAlt, 
             cSharpTitle),

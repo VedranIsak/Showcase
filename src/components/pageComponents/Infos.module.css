@@ -19,7 +19,7 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: var(--border);
-    border-radius: 50px;
+    border-radius: 25px;
     overflow: hidden;
     transition: .5s border-color;
     outline: none;
@@ -35,10 +35,17 @@
     border-color: white;
 }
 
-.container h2, .container h3 {
+.container h3, .container p {
     text-align: center;
-    margin: 20px;
+    margin-top: 15px;
     color: white;
+}
+
+.container p {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .img {

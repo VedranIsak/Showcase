@@ -17,8 +17,8 @@ const Projects: React.FC<ProjectsProps> = ({projectsHeader, projectList, circleB
                 title={project.imgTitle} 
             />
             <div className={styles.textContainer}>
-                <h2>{project.header}</h2>
-                <h3>{project.text}</h3>
+                <h3>{project.header}</h3>
+                <p>{project.text}</p>
             </div>
         </div>
     )
