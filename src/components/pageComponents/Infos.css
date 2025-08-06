@@ -1,0 +1,35 @@
+@media (max-width: 1200px) {
+    div[data-id="infos-content-container"] {
+        flex-direction: column !important;
+    }
+
+    div[data-id="infos-container"] {
+        width: 450px;
+    }
+
+    div[data-id="infos-container"] img {
+        width: 450px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 750px) {
+    div[data-id="infos-container"] {
+        width: 360px;
+    }
+
+    div[data-id="infos-container"] img {
+        width: 344px;
+        height: 230px;
+    }
+}
+
+@media (max-width: 400px) {
+    div[data-id="infos-container"] {
+        width: 90%;
+    }
+
+    div[data-id="infos-container"] img {
+        display: none !important;
+    }
+}

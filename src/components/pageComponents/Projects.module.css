@@ -1,0 +1,54 @@
+.mainContainer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.mainContentContainer {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px;
+    margin-bottom: var(--page-margin);
+}
+
+.container {
+    border: var(--border);
+    border-radius: 25px;
+    width: 80%;
+    margin: 20px;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: border-color .5s;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: var(--large-padding);
+    z-index: 1;
+}
+
+.container:hover {
+    border-color: white;
+}
+
+.container img {
+    width: 150px;
+    height: 150px;
+}
+
+.container img, .container h3, .container p {
+    margin: 5px;
+}
+
+.textContainer h3 {
+    text-align: center;
+}

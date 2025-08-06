@@ -1,0 +1,26 @@
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 100vw;
+    height: auto;
+    z-index: 1;
+}
+
+.headerContainer {
+    padding-top: var(--page-margin);
+    padding-bottom: var(--page-margin);
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerContainer h2, .headerContainer h3 {
+    padding-left: var(--large-padding);
+    padding-right: var(--large-padding);
+    text-align: center;
+    color: white;
+}
