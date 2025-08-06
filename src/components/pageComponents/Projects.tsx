@@ -14,7 +14,6 @@ const Projects: React.FC<ProjectsProps> = ({projectsHeader, projectList, circleB
             <img
                 src={project.imgSrc}
                 alt={project.imgAlt}
-                title={project.imgTitle} 
             />
             <div className={styles.textContainer}>
                 <h3>{project.header}</h3>

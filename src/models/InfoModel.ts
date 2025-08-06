@@ -3,10 +3,10 @@ class InfoModel {
     text: string;
     imgSrc: string;
     imgAlt: string;
-    imgTitle: string;
+    imgTitle: string | undefined;
     
-    constructor(header: string, text: string, imgSrc: string = null,
-        imgAlt: string = null, imgTitle: string = null) {
+    constructor(header: string, text: string, imgSrc: string,
+        imgAlt: string, imgTitle: string | undefined = undefined) {
         this.header = header;
         this.text = text;
         this.imgSrc = imgSrc;

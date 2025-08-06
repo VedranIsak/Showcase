@@ -26,16 +26,15 @@ const Top: React.FC<TopProps> = ({circleBackgroundSide}: TopProps): JSX.Element 
                     data-id="top-img"
                     onClick={() => { switchProfileImg(); }}
                     src={imgSrc}
-                    alt="Self taken profile image of Vedran Isak"
-                    title="Self taken profile image of Vedran Isak"
+                    alt="Vedran Isak"
                 />
             </div>
             <div className={styles.textContainer} data-id="top-text-container">
                 <h1>
-                    Welcome! I'm Vedran Isak.
+                    Welcome! I'm Vedran Isak
                 </h1>
                 <h2>
-                    With this site you can get to know me and see some of my software related endeavours.
+                    With this site you can get to know me and see some of my software related endeavours
                 </h2>
             </div>
         </div>

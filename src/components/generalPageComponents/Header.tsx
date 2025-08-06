@@ -70,7 +70,7 @@ const Header: React.FC = (): JSX.Element => {
                             <img
                                 src={githubLogo}
                                 alt="Link to Vedran's Github page"
-                                title="Image by nerdy besky from icon-icons https://icon-icons.com/users/CWANEwLNzn4fGOJ95Eiug/icon-sets/" 
+                                title="Image by nerdy besky from icon-icons https://icon-icons.com/users/CWANEwLNzn4fGOJ95Eiug/icon-sets/. Licensed under CC BY 4.0." 
                             />    
                         </a>               
                     </li>                    
@@ -82,7 +82,7 @@ const Header: React.FC = (): JSX.Element => {
                             <img
                                 src={linkedInLogo}
                                 alt="Link to Vedran's LinkedIn page"
-                                title="Image by Amit Jain from icon-icons https://icon-icons.com/users/fQ0EuGDhi5xJAtEEISMXx/icon-sets/" 
+                                title="Image by Amit Jain from icon-icons https://icon-icons.com/users/fQ0EuGDhi5xJAtEEISMXx/icon-sets/. Licensed under CC BY 4.0." 
                             />    
                         </a>               
                     </li>
@@ -104,7 +104,6 @@ const Header: React.FC = (): JSX.Element => {
                     >
                         <img 
                             src={downArrowsLogo}
-                            title='AI generated image of two arrows pointing down'
                             alt='Down arrow menu button'
                         />
                     </a>
