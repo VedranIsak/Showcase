@@ -16,6 +16,13 @@ const App: React.FC = (): JSX.Element => {
     <>
       <Header />
       <Top circleBackgroundSide={CircleBackgroundSide.left} />
+      <FadeInSection>
+        <Infos
+          infosHeader={GetInfosHeader(InfoType.About)}
+          infoList={GetInfos(InfoType.About)}
+          circleBackgroundSide={CircleBackgroundSide.left}
+        />
+      </FadeInSection> 
       <FadeInSection>      
         <Infos
           infosHeader={GetInfosHeader(InfoType.Skills)}
@@ -37,13 +44,6 @@ const App: React.FC = (): JSX.Element => {
           circleBackgroundSide={CircleBackgroundSide.right}
         />
       </FadeInSection>
-      <FadeInSection>
-        <Infos
-          infosHeader={GetInfosHeader(InfoType.About)}
-          infoList={GetInfos(InfoType.About)}
-          circleBackgroundSide={CircleBackgroundSide.left}
-        />
-      </FadeInSection> 
       <Footer />
     </>
   )
