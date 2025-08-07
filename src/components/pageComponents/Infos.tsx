@@ -6,7 +6,6 @@ import './Infos.css';
 import { JSX } from 'react';
 import PageHeader from '../generalPageComponents/PageHeader';
 import CircleBackground from '../designComponents/CircleBackground';
-import CircleBackgroundSide from '../../enums/CircleBackgroundSide';
 
 const Infos: React.FC<InfosProps> = ({ infosHeader, infoList, circleBackgroundSide }: InfosProps): JSX.Element => 
 {
