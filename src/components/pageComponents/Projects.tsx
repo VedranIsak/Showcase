@@ -5,7 +5,7 @@ import './Projects.css';
 import { JSX } from 'react';
 import PageHeader from '../generalPageComponents/PageHeader';
 import CircleBackground from '../designComponents/CircleBackground';
-import ProjectProps from '../../props/ProjectProps';
+import ProjectProps from '../../props/ProjectProps.ts';
 
 const Projects: React.FC<ProjectsProps> = ({projectsHeader, projectList, circleBackgroundSide}: ProjectsProps): JSX.Element => {
 
