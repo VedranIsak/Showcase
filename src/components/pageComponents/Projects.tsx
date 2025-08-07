@@ -10,7 +10,7 @@ import CircleBackground from '../designComponents/CircleBackground';
 const Projects: React.FC<ProjectsProps> = ({projectsHeader, projectList, circleBackgroundSide}: ProjectsProps): JSX.Element => {
 
     const Project: React.FC<ProjectProps> = ({project}: ProjectProps): JSX.Element => (
-        <div className={styles.container}>
+        <div className={styles.container} data-id="project-container">
             <img
                 src={project.imgSrc}
                 alt={project.imgAlt}
