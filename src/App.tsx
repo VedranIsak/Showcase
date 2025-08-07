@@ -15,7 +15,7 @@ const App: React.FC = (): JSX.Element => {
   return (
     <>
       <Header />
-      <Top circleBackgroundSide={CircleBackgroundSide.left} />
+      <Top circleBackgroundSide={CircleBackgroundSide.right} />
       <FadeInSection>
         <Infos
           infosHeader={GetInfosHeader(InfoType.About)}

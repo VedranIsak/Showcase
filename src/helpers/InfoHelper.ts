@@ -9,21 +9,16 @@ import personalityImg from "../assets/about/personality.jpg";
 import InfoType from "../enums/InfoType";
 import Info from '../models/InfoModel';
 
-const sqlAlt: string = "AI generated image of a computer with SQL Server Code";
-const aspAlt: string = "AI generated image of a computer with ASP.NET Code";
-const reactAlt: string = "AI generated image of a computer with React Code";
+const sqlAlt: string = "AI generated computer with SQL Server Code";
+const aspAlt: string = "AI generated computer with ASP.NET Code";
+const reactAlt: string = "AI generated computer with React Code";
 
-const aspTitle: string = aspAlt;
-const sqlTitle: string = sqlAlt;
-const reactTitle: string = reactAlt;
-
-const interestsAlt: string = "Image by unknown from https://appomate.com.au/why-are-microservices-necessary-for-any-entrepreneur-who-needs-app-scaling/. Licensed under CC BY 4.0.";
-const lifeAlt: string = "Image by Eric And30 from https://commons.wikimedia.org/wiki/File:Studenthuset-corson.jpg. Licensed under CC BY 4.0.";
-const personalityAlt: string = "Image by unknown from https://www.pickpik.com/meditation-view-sunrise-sky-peace-happy-93445. Licensed under CC BY 4.0.";
-
-const interestsTitle: string = interestsAlt;
-const lifeTitle: string = lifeAlt;
-const personalityTitle: string = personalityAlt;
+const interestsAlt: string = "Phone with a hologram showing apps and services the phone provides";
+const lifeAlt: string = "Walkway through Linkoping University";
+const personalityAlt: string = "Person sitting and observing the sky";
+const interestsTitle: string = "Image by unknown from https://appomate.com.au/why-are-microservices-necessary-for-any-entrepreneur-who-needs-app-scaling/. Licensed under CC BY 4.0.";
+const lifeTitle: string = "Image by Eric And30 from https://commons.wikimedia.org/wiki/File:Studenthuset-corson.jpg. Licensed under CC BY 4.0.";
+const personalityTitle: string = "Image by unknown from https://www.pickpik.com/meditation-view-sunrise-sky-peace-happy-93445. Licensed under CC BY 4.0.";
 
 const GetSkillsInfos: () => Info[] = (): Info[] => (
     new Array<Info>(
@@ -32,21 +27,18 @@ const GetSkillsInfos: () => Info[] = (): Info[] => (
             "I spent nearly three years working with ASP.NET MVC and WPF as a fullstack developer. The work touched everything"
             + " from WPF applications to websites written using ASP.NET MVC.", 
             aspImg, 
-            aspAlt, 
-            aspTitle),
+            aspAlt),
         new Info(
             "SQL Server", 
             "I spent nearly three years working with SQL Server and, partially, Entity Framework. This involved creating new relations " +
             " , managing a massive database and mapping rules for foreign keys, constraints and the likes.", 
             sqlImg, 
-            sqlAlt, 
-            sqlTitle),
+            sqlAlt),
         new Info(
             "React", 
             "I've spent several years making projects in React, using primarily Typescript. I've also worked with React professionally in several projects. I've published several websites in React, including this one.", 
             reactImg, 
-            reactAlt, 
-            reactTitle)
+            reactAlt)
     )
 );
 
