@@ -2,7 +2,7 @@ import aspImg from '../assets/skills/aspDotNet.png';
 import sqlImg from '../assets/skills/sqlServer.png';
 import reactImg from '../assets/skills/react.png';
 
-import lifeImg from "../assets/about/Life.jpg";
+import lifeImg from "../assets/about/life.jpg";
 import interestsImg from "../assets/about/interests.jpg";
 import personalityImg from "../assets/about/personality.jpg";
 
