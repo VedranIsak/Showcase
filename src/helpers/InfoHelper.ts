@@ -69,7 +69,7 @@ const GetAboutInfos: () => Info[] = (): Info[] => (
             "My personality", 
             `I'm a tad bit of an extravagant individual. But at the same time I'm someone who can often be fairly reserved.
             Friends and family would describe me first and foremost as deeply loyal, empathetic and incredibly determined and humble.
-            I am, to my core, an introvert.`,
+            At work, I enjoy working towards a clear goal and learning as much as possible along the way.`,
             personalityImg,
             personalityAlt,
             personalityTitle
