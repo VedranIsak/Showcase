@@ -67,7 +67,7 @@ const GetAboutInfos: () => Info[] = (): Info[] => (
         ),
         new Info(
             "My personality", 
-            `I'm a tad bit of an extravagant individual. But at the same time I'm someone who can often be fairly reserved.
+            `One of my best qualities is that I am a very good listener. I am also very inquisitive, almost to a fault.
             Friends and family would describe me first and foremost as deeply loyal, empathetic and incredibly determined and humble.
             At work, I enjoy working towards a clear goal and learning as much as possible along the way.`,
             personalityImg,
