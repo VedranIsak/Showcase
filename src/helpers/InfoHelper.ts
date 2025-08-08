@@ -57,9 +57,9 @@ const GetAboutInfos: () => Info[] = (): Info[] => (
         ),
         new Info(
             "My interests", 
-            `My main interest in terms of software development is most likely mobile app development.
+            `My main interest in terms of software development is mobile app development.
             This is an area I would like to excel at in the future. Previously my main interests have been 
-            in web development, using React and .NET. Apart from that I am a huge nerd also when it comes to
+            in web development, using React and .NET. Apart from that I am also very keen to learn about broader
             history and geopolitics.`, 
             interestsImg,
             interestsAlt,
@@ -69,7 +69,7 @@ const GetAboutInfos: () => Info[] = (): Info[] => (
             "My personality", 
             `One of my best qualities is that I am a very good listener. I am also very inquisitive, almost to a fault.
             Friends and family would describe me first and foremost as deeply loyal, empathetic and incredibly determined and humble.
-            At work, I enjoy working towards a clear goal and learning as much as possible along the way.`,
+            At work, I enjoy working in teams and working towards a clear goal and learning as much as possible along the way.`,
             personalityImg,
             personalityAlt,
             personalityTitle
